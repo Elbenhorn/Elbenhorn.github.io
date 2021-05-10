@@ -1,0 +1,2881 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Markdown语法学习, ts">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Markdown语法学习 | Horn&#39;Page</title>
+    <link rel="icon" type="image/png" href="/Elbenhorn.github.io/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/css/my.css">
+
+    <script src="/Elbenhorn.github.io/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/Elbenhorn.github.io/atom.xml" title="Horn'Page" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/Elbenhorn.github.io/" class="waves-effect waves-light">
+                    
+                    <img src="/Elbenhorn.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Horn&#39;Page</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/Elbenhorn.github.io/navigate" class="waves-effect waves-light">
+      
+      <i class="fas fa-location-arrow" style="zoom: 0.6;"></i>
+      
+      <span>导航</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/Elbenhorn.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Horn&#39;Page</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/Elbenhorn.github.io/navigate" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-location-arrow"></i>
+			
+			导航
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/Elbenhorn.github.io/medias/featureimages/9.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Markdown语法学习</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/Elbenhorn.github.io/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/Elbenhorn.github.io/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-01-29
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Markdown语法学习"><a href="#Markdown语法学习" class="headerlink" title="Markdown语法学习"></a>Markdown语法学习</h1><p>本篇博客参照了<a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown基本语法教程</a>   </p>
+<h2 id="Markdown简介"><a href="#Markdown简介" class="headerlink" title="Markdown简介"></a>Markdown简介</h2><p>Markdown是一种轻量级标记语言，排版语法简洁，让人们更多地关注内容本身而非排版。它使用易读易写的纯文本格式编写文档，可与HTML混编，可导出 HTML、PDF 以及本身的 .md 格式的文件。因简洁、高效、易读、易写，Markdown被大量使用，如Github、Wikipedia等网站，如各大博客平台：WordPress、Drupal、简书等。  </p>
+<h2 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h2><table>
+<thead>
+<tr>
+<th>元素</th>
+<th align="left">Markdown语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#jump1">标题</a></td>
+<td align="left"># H1<br>## H2<br>### H3</td>
+</tr>
+<tr>
+<td>粗体</td>
+<td align="left">**text**</td>
+</tr>
+<tr>
+<td>斜体</td>
+<td align="left">*text*</td>
+</tr>
+<tr>
+<td><a href="#jump2">引用块</a></td>
+<td align="left">&gt;This is a sentence</td>
+</tr>
+<tr>
+<td><a href="#jump3">有序列表</a></td>
+<td align="left">1. First<br>2. Second<br>3. Third</td>
+</tr>
+<tr>
+<td><a href="#jump3">无序列表</a></td>
+<td align="left">- First<br>- Second<br>- Third</td>
+</tr>
+<tr>
+<td><a href="#jump4">代码</a></td>
+<td align="left"><code>`</code>code<code>`</code></td>
+</tr>
+<tr>
+<td><a href="#jump5">分割线</a></td>
+<td align="left">—or____________or***</td>
+</tr>
+<tr>
+<td><a href="#jump6">链接</a></td>
+<td align="left">[title](url)</td>
+</tr>
+<tr>
+<td><a href="#jump7">图片</a></td>
+<td align="left">![title](url)</td>
+</tr>
+</tbody></table>
+<h2 id="Markdown扩展语法"><a href="#Markdown扩展语法" class="headerlink" title="Markdown扩展语法"></a>Markdown扩展语法</h2><table>
+<thead>
+<tr>
+<th>元素</th>
+<th>Markdown扩展语法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>表格</td>
+<td>|syntax|Description|<br>|———|———–|<br>|1|2|</td>
+</tr>
+<tr>
+<td>代码块</td>
+<td><code>code</code></td>
+</tr>
+<tr>
+<td><a href="#jump8">脚注</a></td>
+<td>Here’s a sentence with a footnote. <code>[^1]</code><br><code>[^1]</code>: This is the footnote.</td>
+</tr>
+<tr>
+<td><a href="#jump9">标题编号</a></td>
+<td>### My Great Heading (#custom-id)</td>
+</tr>
+<tr>
+<td><a href="#jump11">定义列表</a></td>
+<td>term<br>: definition</td>
+</tr>
+<tr>
+<td><a href="jump12">删除线</a></td>
+<td><del>The worl d is flat.</del></td>
+</tr>
+<tr>
+<td>任务列表</td>
+<td>- [x] Write the press release<br>- [ ] Update the website<br>- [ ] Contact the media</td>
+</tr>
+<tr>
+<td>Emoji表情</td>
+<td>/:joy/:</td>
+</tr>
+<tr>
+<td>禁止自动网址连接</td>
+<td>`url</td>
+</tr>
+</tbody></table>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a><span id="jump1">标题</span></h3><p>不同的 Markdown 应用程序处理 <code>#</code> 和标题之间的空格方式并不一致。为了兼容考虑，需要用一个空格在 <code>#</code> 和标题之间进行分隔。  </p>
+<p><img src="http://horndeng.oss-cn-hangzhou.aliyuncs.com/img/%E6%A0%87%E9%A2%98%E8%AF%AD%E6%B3%95.jpg" alt="1">    </p>
+<h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a><span id="jump2">引用块</span></h3><p>可以在句子前面添加&gt;转换为引用块。</p>
+<p>/&gt; Dorothy followed her through many of the beautiful rooms in her castle.   </p>
+<blockquote>
+<p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
+<p>嵌套块的引用  </p>
+<blockquote>
+<p>This is sentence1</p>
+<blockquote>
+<p>this is sentnece2</p>
+</blockquote>
+</blockquote>
+<h3 id="列表使用"><a href="#列表使用" class="headerlink" title="列表使用"></a><span id="jump3">列表使用</span></h3><h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>创建有序列表，可以每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。按照上面这句话打怎么也打不出有序列表的效果，直接用的Typora的快捷键<code>Ctrl+Shift+[</code>:laughing:,下面的无序列表也是，有缘人看到了可以指点一下:satisfied:</p>
+<ol>
+<li>wwww</li>
+<li>wwww</li>
+<li>wwwww</li>
+</ol>
+<h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5><p>创建无序列表，可以在每个列表项前面添加破折号 (-)、星号 (*) 或加号 (+) 。缩进一个或多个列表项可创建嵌套列表。  </p>
+<ul>
+<li>w</li>
+<li>ww</li>
+<li>www  </li>
+</ul>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>用两个反引号<code>code</code>表示代码，多个``可以转移反引号，对于代码块中的代码需要Tab缩进  </p>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a><span id="jump5">分割线</span></h3><p>要创建分隔线，请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线 (<code>___</code>) ，并且不能包含其他内容。为了兼容性需要在分割线前后都打上空白行  </p>
+<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a><span id="jump6">链接</span></h3><p>链接文本放在中括号内，链接地址放在后面的括号中，链接title可选。</p>
+<p>超链接Markdown语法代码：<code>[超链接显示名](超链接地址 &quot;超链接title&quot;)</code></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一个链接 [Markdown语法](https://markdown.com.cn)。</span><br></pre></td></tr></table></figure>
+<p>渲染效果如下：</p>
+<p>这是一个链接 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown语法</a> </p>
+<p>链接title是当鼠标悬停在链接上时会出现的文字，这个title是可选的，它放在圆括号中链接地址后面，跟链接地址之间以空格分隔。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一个链接 [Markdown语法](https://markdown.com.cn &quot;最好的markdown教程&quot;)。</span><br></pre></td></tr></table></figure>
+
+
+<p>渲染效果如下：</p>
+<p>这是一个链接 <a target="_blank" rel="noopener" href="https://markdown.com.cn/">Markdown语法</a>  </p>
+<h3 id="网址和Email地址"><a href="#网址和Email地址" class="headerlink" title="网址和Email地址"></a>网址和Email地址</h3><p>使用尖括号可以很方便地把URL或者email地址变成可点击的链接。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://markdown.com.cn&gt;</span><br><span class="line">&lt;fake@example.com&gt;</span><br></pre></td></tr></table></figure>
+<p>渲染效果如下：</p>
+<p><a target="_blank" rel="noopener" href="https://markdown.com.cn/">https://markdown.com.cn</a><br><a href="mailto:fake@example.com">fake@example.com</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a><span id="jump7">图片</span></h3><p>图片的引用格式为<code>![title](url)</code>，对应的HTML代码：<code>&lt;img src=&quot;图片链接&quot; alt=&quot;图片alt&quot; title=&quot;图片title&quot;&gt;</code>如果要给图片增加链接可以采用下面的格式  </p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[![沙漠中的岩石图片](url1)](url2)</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a><span id="jump8">脚注</span></h3><p>脚注可以用来添加知识或者参考，在需要注释的单词后面添加<code>[^x]</code>即可注释，x可以是标识符或者字母，但不能包含空格。对于注释，它可以出现除列表，块引号和表之外的任何位置，注释的格式为<code>[^x]:my footnote</code></p>
+<h3 id="标题编号"><a href="#标题编号" class="headerlink" title="标题编号"></a><span id="jump9">标题编号</span></h3><p>标题编号可以达到目录的效果，可以利用标题编号跳转到定义的位置，标题编号的格式为<code>[标题](#目标位置)</code>。本文正是利用了标题编号实现本博客内跳转：先利用格式<code>[标题](#目标位置)</code>对<a href="#jump10">要跳转的地方（点我跳转到文章开头）</a>格式化，在用HTML的格式定义<code>&lt;span id=&quot;jump9&quot;&gt;目的地&lt;/span&gt;</code>跳转目的地。</p>
+<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a><span id="jump11">定义列表</span></h3><p>一些Markdown处理器允许您创建术语及其对应定义的<em>定义列表</em>。要创建定义列表，请在第一行上键入术语。在下一行，键入一个冒号，后跟一个空格和定义。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">First Term</span><br><span class="line">: This is the definition of the first term.</span><br><span class="line"></span><br><span class="line">Second Term</span><br><span class="line">: This is one definition of the second term.</span><br><span class="line">: This is another definition of the second term.</span><br></pre></td></tr></table></figure>
+<p>HTML看起来像这样：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>First Term<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>This is the definition of the first term.<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Second Term<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>This is one definition of the second term. <span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">dd</span>&gt;</span>This is another definition of the second term.<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>呈现的输出如下所示：</p>
+<ul>
+<li><p>First Term</p>
+<p>This is the definition of the first term.</p>
+</li>
+<li><p>Second Term</p>
+<p>This is one definition of the second term.</p>
+<p>This is another definition of the second term.</p>
+</li>
+</ul>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a><span id="jump12">删除线</span></h3><p>可以通过在单词中心放置一条水平线来删除单词。结果看起来像这样。此功能使您可以指示某些单词是一个错误，并不表示要包含在文档中。若要删除单词，请<code>~~</code>在单词前后使用两个波浪号。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~世界是平坦的。~~ 我们现在知道世界是圆的。</span><br></pre></td></tr></table></figure>
+<p>呈现的输出如下所示：</p>
+<p>世界是平坦的。 我们现在知道世界是圆的。</p>
+<h3 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a><span id="jump13">任务列表</span></h3><p>任务列表使您可以创建带有复选框的项目列表。在支持任务列表的Markdown应用程序中，复选框将显示在内容旁边。要创建任务列表，请在任务列表项之前添加破折号（<code>-</code>）和方括号，并<code>[ ]</code>在其前面加上空格。要选择一个复选框，请x在方括号（<code>[x]</code>）之间添加in 。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- [x] Write the press release</span><br><span class="line">- [ ] Update the website</span><br><span class="line">- [ ] Contact the media</span><br></pre></td></tr></table></figure>
+<p>呈现的输出如下所示：</p>
+<ul>
+<li><input checked disabled type="checkbox"> Write the press release</li>
+<li><input disabled type="checkbox"> Update the website</li>
+<li><input disabled type="checkbox"> Contact the media</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">word1  </span><br><span class="line">word2</span><br><span class="line">word3</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="附：表情列表"><a href="#附：表情列表" class="headerlink" title="附：表情列表"></a><span id="jump14">附：表情列表</span></h3><p>引用自<a target="_blank" rel="noopener" href="https://gist.github.com/rxaviers/7360908">表情符号简码列表</a></p>
+<p>People</p>
+<table>
+<thead>
+<tr>
+<th>:bowtie: <code>:bowtie:</code></th>
+<th>:smile: <code>:smile:</code></th>
+<th>:laughing: <code>:laughing:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:blush: <code>:blush:</code></td>
+<td>:smiley: <code>:smiley:</code></td>
+<td>:relaxed: <code>:relaxed:</code></td>
+</tr>
+<tr>
+<td>:smirk: <code>:smirk:</code></td>
+<td>:heart_eyes: <code>:heart_eyes:</code></td>
+<td>:kissing_heart: <code>:kissing_heart:</code></td>
+</tr>
+<tr>
+<td>:kissing_closed_eyes: <code>:kissing_closed_eyes:</code></td>
+<td>:flushed: <code>:flushed:</code></td>
+<td>:relieved: <code>:relieved:</code></td>
+</tr>
+<tr>
+<td>:satisfied: <code>:satisfied:</code></td>
+<td>:grin: <code>:grin:</code></td>
+<td>:wink: <code>:wink:</code></td>
+</tr>
+<tr>
+<td>:stuck_out_tongue_winking_eye: <code>:stuck_out_tongue_winking_eye:</code></td>
+<td>:stuck_out_tongue_closed_eyes: <code>:stuck_out_tongue_closed_eyes:</code></td>
+<td>:grinning: <code>:grinning:</code></td>
+</tr>
+<tr>
+<td>:kissing: <code>:kissing:</code></td>
+<td>:kissing_smiling_eyes: <code>:kissing_smiling_eyes:</code></td>
+<td>:stuck_out_tongue: <code>:stuck_out_tongue:</code></td>
+</tr>
+<tr>
+<td>:sleeping: <code>:sleeping:</code></td>
+<td>:worried: <code>:worried:</code></td>
+<td>:frowning: <code>:frowning:</code></td>
+</tr>
+<tr>
+<td>:anguished: <code>:anguished:</code></td>
+<td>:open_mouth: <code>:open_mouth:</code></td>
+<td>:grimacing: <code>:grimacing:</code></td>
+</tr>
+<tr>
+<td>:confused: <code>:confused:</code></td>
+<td>:hushed: <code>:hushed:</code></td>
+<td>:expressionless: <code>:expressionless:</code></td>
+</tr>
+<tr>
+<td>:unamused: <code>:unamused:</code></td>
+<td>:sweat_smile: <code>:sweat_smile:</code></td>
+<td>:sweat: <code>:sweat:</code></td>
+</tr>
+<tr>
+<td>:disappointed_relieved: <code>:disappointed_relieved:</code></td>
+<td>:weary: <code>:weary:</code></td>
+<td>:pensive: <code>:pensive:</code></td>
+</tr>
+<tr>
+<td>:disappointed: <code>:disappointed:</code></td>
+<td>:confounded: <code>:confounded:</code></td>
+<td>:fearful: <code>:fearful:</code></td>
+</tr>
+<tr>
+<td>:cold_sweat: <code>:cold_sweat:</code></td>
+<td>:persevere: <code>:persevere:</code></td>
+<td>:cry: <code>:cry:</code></td>
+</tr>
+<tr>
+<td>:sob: <code>:sob:</code></td>
+<td>:joy: <code>:joy:</code></td>
+<td>:astonished: <code>:astonished:</code></td>
+</tr>
+<tr>
+<td>:scream: <code>:scream:</code></td>
+<td>:neckbeard: <code>:neckbeard:</code></td>
+<td>:tired_face: <code>:tired_face:</code></td>
+</tr>
+<tr>
+<td>:angry: <code>:angry:</code></td>
+<td>:rage: <code>:rage:</code></td>
+<td>:triumph: <code>:triumph:</code></td>
+</tr>
+<tr>
+<td>:sleepy: <code>:sleepy:</code></td>
+<td>:yum: <code>:yum:</code></td>
+<td>:mask: <code>:mask:</code></td>
+</tr>
+<tr>
+<td>:sunglasses: <code>:sunglasses:</code></td>
+<td>:dizzy_face: <code>:dizzy_face:</code></td>
+<td>:imp: <code>:imp:</code></td>
+</tr>
+<tr>
+<td>:smiling_imp: <code>:smiling_imp:</code></td>
+<td>:neutral_face: <code>:neutral_face:</code></td>
+<td>:no_mouth: <code>:no_mouth:</code></td>
+</tr>
+<tr>
+<td>:innocent: <code>:innocent:</code></td>
+<td>:alien: <code>:alien:</code></td>
+<td>:yellow_heart: <code>:yellow_heart:</code></td>
+</tr>
+<tr>
+<td>:blue_heart: <code>:blue_heart:</code></td>
+<td>:purple_heart: <code>:purple_heart:</code></td>
+<td>:heart: <code>:heart:</code></td>
+</tr>
+<tr>
+<td>:green_heart: <code>:green_heart:</code></td>
+<td>:broken_heart: <code>:broken_heart:</code></td>
+<td>:heartbeat: <code>:heartbeat:</code></td>
+</tr>
+<tr>
+<td>:heartpulse: <code>:heartpulse:</code></td>
+<td>:two_hearts: <code>:two_hearts:</code></td>
+<td>:revolving_hearts: <code>:revolving_hearts:</code></td>
+</tr>
+<tr>
+<td>:cupid: <code>:cupid:</code></td>
+<td>:sparkling_heart: <code>:sparkling_heart:</code></td>
+<td>:sparkles: <code>:sparkles:</code></td>
+</tr>
+<tr>
+<td>:star: <code>:star:</code></td>
+<td>:star2: <code>:star2:</code></td>
+<td>:dizzy: <code>:dizzy:</code></td>
+</tr>
+<tr>
+<td>:boom: <code>:boom:</code></td>
+<td>:collision: <code>:collision:</code></td>
+<td>:anger: <code>:anger:</code></td>
+</tr>
+<tr>
+<td>:exclamation: <code>:exclamation:</code></td>
+<td>:question: <code>:question:</code></td>
+<td>:grey_exclamation: <code>:grey_exclamation:</code></td>
+</tr>
+<tr>
+<td>:grey_question: <code>:grey_question:</code></td>
+<td>:zzz: <code>:zzz:</code></td>
+<td>:dash: <code>:dash:</code></td>
+</tr>
+<tr>
+<td>:sweat_drops: <code>:sweat_drops:</code></td>
+<td>:notes: <code>:notes:</code></td>
+<td>:musical_note: <code>:musical_note:</code></td>
+</tr>
+<tr>
+<td>:fire: <code>:fire:</code></td>
+<td>:hankey: <code>:hankey:</code></td>
+<td>:poop: <code>:poop:</code></td>
+</tr>
+<tr>
+<td>:shit: <code>:shit:</code></td>
+<td>:+1: <code>:+1:</code></td>
+<td>:thumbsup: <code>:thumbsup:</code></td>
+</tr>
+<tr>
+<td>:-1: <code>:-1:</code></td>
+<td>:thumbsdown: <code>:thumbsdown:</code></td>
+<td>:ok_hand: <code>:ok_hand:</code></td>
+</tr>
+<tr>
+<td>:punch: <code>:punch:</code></td>
+<td>:facepunch: <code>:facepunch:</code></td>
+<td>:fist: <code>:fist:</code></td>
+</tr>
+<tr>
+<td>:v: <code>:v:</code></td>
+<td>:wave: <code>:wave:</code></td>
+<td>:hand: <code>:hand:</code></td>
+</tr>
+<tr>
+<td>:raised_hand: <code>:raised_hand:</code></td>
+<td>:open_hands: <code>:open_hands:</code></td>
+<td>:point_up: <code>:point_up:</code></td>
+</tr>
+<tr>
+<td>:point_down: <code>:point_down:</code></td>
+<td>:point_left: <code>:point_left:</code></td>
+<td>:point_right: <code>:point_right:</code></td>
+</tr>
+<tr>
+<td>:raised_hands: <code>:raised_hands:</code></td>
+<td>:pray: <code>:pray:</code></td>
+<td>:point_up_2: <code>:point_up_2:</code></td>
+</tr>
+<tr>
+<td>:clap: <code>:clap:</code></td>
+<td>:muscle: <code>:muscle:</code></td>
+<td>:metal: <code>:metal:</code></td>
+</tr>
+<tr>
+<td>:fu: <code>:fu:</code></td>
+<td>:walking: <code>:walking:</code></td>
+<td>:runner: <code>:runner:</code></td>
+</tr>
+<tr>
+<td>:running: <code>:running:</code></td>
+<td>:couple: <code>:couple:</code></td>
+<td>:family: <code>:family:</code></td>
+</tr>
+<tr>
+<td>:two_men_holding_hands: <code>:two_men_holding_hands:</code></td>
+<td>:two_women_holding_hands: <code>:two_women_holding_hands:</code></td>
+<td>:dancer: <code>:dancer:</code></td>
+</tr>
+<tr>
+<td>:dancers: <code>:dancers:</code></td>
+<td>:ok_woman: <code>:ok_woman:</code></td>
+<td>:no_good: <code>:no_good:</code></td>
+</tr>
+<tr>
+<td>:information_desk_person: <code>:information_desk_person:</code></td>
+<td>:raising_hand: <code>:raising_hand:</code></td>
+<td>:bride_with_veil: <code>:bride_with_veil:</code></td>
+</tr>
+<tr>
+<td>:person_with_pouting_face: <code>:person_with_pouting_face:</code></td>
+<td>:person_frowning: <code>:person_frowning:</code></td>
+<td>:bow: <code>:bow:</code></td>
+</tr>
+<tr>
+<td>:couplekiss: <code>:couplekiss:</code></td>
+<td>:couple_with_heart: <code>:couple_with_heart:</code></td>
+<td>:massage: <code>:massage:</code></td>
+</tr>
+<tr>
+<td>:haircut: <code>:haircut:</code></td>
+<td>:nail_care: <code>:nail_care:</code></td>
+<td>:boy: <code>:boy:</code></td>
+</tr>
+<tr>
+<td>:girl: <code>:girl:</code></td>
+<td>:woman: <code>:woman:</code></td>
+<td>:man: <code>:man:</code></td>
+</tr>
+<tr>
+<td>:baby: <code>:baby:</code></td>
+<td>:older_woman: <code>:older_woman:</code></td>
+<td>:older_man: <code>:older_man:</code></td>
+</tr>
+<tr>
+<td>:person_with_blond_hair: <code>:person_with_blond_hair:</code></td>
+<td>:man_with_gua_pi_mao: <code>:man_with_gua_pi_mao:</code></td>
+<td>:man_with_turban: <code>:man_with_turban:</code></td>
+</tr>
+<tr>
+<td>:construction_worker: <code>:construction_worker:</code></td>
+<td>:cop: <code>:cop:</code></td>
+<td>:angel: <code>:angel:</code></td>
+</tr>
+<tr>
+<td>:princess: <code>:princess:</code></td>
+<td>:smiley_cat: <code>:smiley_cat:</code></td>
+<td>:smile_cat: <code>:smile_cat:</code></td>
+</tr>
+<tr>
+<td>:heart_eyes_cat: <code>:heart_eyes_cat:</code></td>
+<td>:kissing_cat: <code>:kissing_cat:</code></td>
+<td>:smirk_cat: <code>:smirk_cat:</code></td>
+</tr>
+<tr>
+<td>:scream_cat: <code>:scream_cat:</code></td>
+<td>:crying_cat_face: <code>:crying_cat_face:</code></td>
+<td>:joy_cat: <code>:joy_cat:</code></td>
+</tr>
+<tr>
+<td>:pouting_cat: <code>:pouting_cat:</code></td>
+<td>:japanese_ogre: <code>:japanese_ogre:</code></td>
+<td>:japanese_goblin: <code>:japanese_goblin:</code></td>
+</tr>
+<tr>
+<td>:see_no_evil: <code>:see_no_evil:</code></td>
+<td>:hear_no_evil: <code>:hear_no_evil:</code></td>
+<td>:speak_no_evil: <code>:speak_no_evil:</code></td>
+</tr>
+<tr>
+<td>:guardsman: <code>:guardsman:</code></td>
+<td>:skull: <code>:skull:</code></td>
+<td>:feet: <code>:feet:</code></td>
+</tr>
+<tr>
+<td>:lips: <code>:lips:</code></td>
+<td>:kiss: <code>:kiss:</code></td>
+<td>:droplet: <code>:droplet:</code></td>
+</tr>
+<tr>
+<td>:ear: <code>:ear:</code></td>
+<td>:eyes: <code>:eyes:</code></td>
+<td>:nose: <code>:nose:</code></td>
+</tr>
+<tr>
+<td>:tongue: <code>:tongue:</code></td>
+<td>:love_letter: <code>:love_letter:</code></td>
+<td>:bust_in_silhouette: <code>:bust_in_silhouette:</code></td>
+</tr>
+<tr>
+<td>:busts_in_silhouette: <code>:busts_in_silhouette:</code></td>
+<td>:speech_balloon: <code>:speech_balloon:</code></td>
+<td>:thought_balloon: <code>:thought_balloon:</code></td>
+</tr>
+<tr>
+<td>:feelsgood: <code>:feelsgood:</code></td>
+<td>:finnadie: <code>:finnadie:</code></td>
+<td>:goberserk: <code>:goberserk:</code></td>
+</tr>
+<tr>
+<td>:godmode: <code>:godmode:</code></td>
+<td>:hurtrealbad: <code>:hurtrealbad:</code></td>
+<td>:rage1: <code>:rage1:</code></td>
+</tr>
+<tr>
+<td>:rage2: <code>:rage2:</code></td>
+<td>:rage3: <code>:rage3:</code></td>
+<td>:rage4: <code>:rage4:</code></td>
+</tr>
+<tr>
+<td>:suspect: <code>:suspect:</code></td>
+<td>:trollface: <code>:trollface:</code></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Nature</p>
+<table>
+<thead>
+<tr>
+<th>:sunny: <code>:sunny:</code></th>
+<th>:umbrella: <code>:umbrella:</code></th>
+<th>:cloud: <code>:cloud:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:snowflake: <code>:snowflake:</code></td>
+<td>:snowman: <code>:snowman:</code></td>
+<td>:zap: <code>:zap:</code></td>
+</tr>
+<tr>
+<td>:cyclone: <code>:cyclone:</code></td>
+<td>:foggy: <code>:foggy:</code></td>
+<td>:ocean: <code>:ocean:</code></td>
+</tr>
+<tr>
+<td>:cat: <code>:cat:</code></td>
+<td>:dog: <code>:dog:</code></td>
+<td>:mouse: <code>:mouse:</code></td>
+</tr>
+<tr>
+<td>:hamster: <code>:hamster:</code></td>
+<td>:rabbit: <code>:rabbit:</code></td>
+<td>:wolf: <code>:wolf:</code></td>
+</tr>
+<tr>
+<td>:frog: <code>:frog:</code></td>
+<td>:tiger: <code>:tiger:</code></td>
+<td>:koala: <code>:koala:</code></td>
+</tr>
+<tr>
+<td>:bear: <code>:bear:</code></td>
+<td>:pig: <code>:pig:</code></td>
+<td>:pig_nose: <code>:pig_nose:</code></td>
+</tr>
+<tr>
+<td>:cow: <code>:cow:</code></td>
+<td>:boar: <code>:boar:</code></td>
+<td>:monkey_face: <code>:monkey_face:</code></td>
+</tr>
+<tr>
+<td>:monkey: <code>:monkey:</code></td>
+<td>:horse: <code>:horse:</code></td>
+<td>:racehorse: <code>:racehorse:</code></td>
+</tr>
+<tr>
+<td>:camel: <code>:camel:</code></td>
+<td>:sheep: <code>:sheep:</code></td>
+<td>:elephant: <code>:elephant:</code></td>
+</tr>
+<tr>
+<td>:panda_face: <code>:panda_face:</code></td>
+<td>:snake: <code>:snake:</code></td>
+<td>:bird: <code>:bird:</code></td>
+</tr>
+<tr>
+<td>:baby_chick: <code>:baby_chick:</code></td>
+<td>:hatched_chick: <code>:hatched_chick:</code></td>
+<td>:hatching_chick: <code>:hatching_chick:</code></td>
+</tr>
+<tr>
+<td>:chicken: <code>:chicken:</code></td>
+<td>:penguin: <code>:penguin:</code></td>
+<td>:turtle: <code>:turtle:</code></td>
+</tr>
+<tr>
+<td>:bug: <code>:bug:</code></td>
+<td>:honeybee: <code>:honeybee:</code></td>
+<td>:ant: <code>:ant:</code></td>
+</tr>
+<tr>
+<td>:beetle: <code>:beetle:</code></td>
+<td>:snail: <code>:snail:</code></td>
+<td>:octopus: <code>:octopus:</code></td>
+</tr>
+<tr>
+<td>:tropical_fish: <code>:tropical_fish:</code></td>
+<td>:fish: <code>:fish:</code></td>
+<td>:whale: <code>:whale:</code></td>
+</tr>
+<tr>
+<td>:whale2: <code>:whale2:</code></td>
+<td>:dolphin: <code>:dolphin:</code></td>
+<td>:cow2: <code>:cow2:</code></td>
+</tr>
+<tr>
+<td>:ram: <code>:ram:</code></td>
+<td>:rat: <code>:rat:</code></td>
+<td>:water_buffalo: <code>:water_buffalo:</code></td>
+</tr>
+<tr>
+<td>:tiger2: <code>:tiger2:</code></td>
+<td>:rabbit2: <code>:rabbit2:</code></td>
+<td>:dragon: <code>:dragon:</code></td>
+</tr>
+<tr>
+<td>:goat: <code>:goat:</code></td>
+<td>:rooster: <code>:rooster:</code></td>
+<td>:dog2: <code>:dog2:</code></td>
+</tr>
+<tr>
+<td>:pig2: <code>:pig2:</code></td>
+<td>:mouse2: <code>:mouse2:</code></td>
+<td>:ox: <code>:ox:</code></td>
+</tr>
+<tr>
+<td>:dragon_face: <code>:dragon_face:</code></td>
+<td>:blowfish: <code>:blowfish:</code></td>
+<td>:crocodile: <code>:crocodile:</code></td>
+</tr>
+<tr>
+<td>:dromedary_camel: <code>:dromedary_camel:</code></td>
+<td>:leopard: <code>:leopard:</code></td>
+<td>:cat2: <code>:cat2:</code></td>
+</tr>
+<tr>
+<td>:poodle: <code>:poodle:</code></td>
+<td>:paw_prints: <code>:paw_prints:</code></td>
+<td>:bouquet: <code>:bouquet:</code></td>
+</tr>
+<tr>
+<td>:cherry_blossom: <code>:cherry_blossom:</code></td>
+<td>:tulip: <code>:tulip:</code></td>
+<td>:four_leaf_clover: <code>:four_leaf_clover:</code></td>
+</tr>
+<tr>
+<td>:rose: <code>:rose:</code></td>
+<td>:sunflower: <code>:sunflower:</code></td>
+<td>:hibiscus: <code>:hibiscus:</code></td>
+</tr>
+<tr>
+<td>:maple_leaf: <code>:maple_leaf:</code></td>
+<td>:leaves: <code>:leaves:</code></td>
+<td>:fallen_leaf: <code>:fallen_leaf:</code></td>
+</tr>
+<tr>
+<td>:herb: <code>:herb:</code></td>
+<td>:mushroom: <code>:mushroom:</code></td>
+<td>:cactus: <code>:cactus:</code></td>
+</tr>
+<tr>
+<td>:palm_tree: <code>:palm_tree:</code></td>
+<td>:evergreen_tree: <code>:evergreen_tree:</code></td>
+<td>:deciduous_tree: <code>:deciduous_tree:</code></td>
+</tr>
+<tr>
+<td>:chestnut: <code>:chestnut:</code></td>
+<td>:seedling: <code>:seedling:</code></td>
+<td>:blossom: <code>:blossom:</code></td>
+</tr>
+<tr>
+<td>:ear_of_rice: <code>:ear_of_rice:</code></td>
+<td>:shell: <code>:shell:</code></td>
+<td>:globe_with_meridians: <code>:globe_with_meridians:</code></td>
+</tr>
+<tr>
+<td>:sun_with_face: <code>:sun_with_face:</code></td>
+<td>:full_moon_with_face: <code>:full_moon_with_face:</code></td>
+<td>:new_moon_with_face: <code>:new_moon_with_face:</code></td>
+</tr>
+<tr>
+<td>:new_moon: <code>:new_moon:</code></td>
+<td>:waxing_crescent_moon: <code>:waxing_crescent_moon:</code></td>
+<td>:first_quarter_moon: <code>:first_quarter_moon:</code></td>
+</tr>
+<tr>
+<td>:waxing_gibbous_moon: <code>:waxing_gibbous_moon:</code></td>
+<td>:full_moon: <code>:full_moon:</code></td>
+<td>:waning_gibbous_moon: <code>:waning_gibbous_moon:</code></td>
+</tr>
+<tr>
+<td>:last_quarter_moon: <code>:last_quarter_moon:</code></td>
+<td>:waning_crescent_moon: <code>:waning_crescent_moon:</code></td>
+<td>:last_quarter_moon_with_face: <code>:last_quarter_moon_with_face:</code></td>
+</tr>
+<tr>
+<td>:first_quarter_moon_with_face: <code>:first_quarter_moon_with_face:</code></td>
+<td>:moon: <code>:moon:</code></td>
+<td>:earth_africa: <code>:earth_africa:</code></td>
+</tr>
+<tr>
+<td>:earth_americas: <code>:earth_americas:</code></td>
+<td>:earth_asia: <code>:earth_asia:</code></td>
+<td>:volcano: <code>:volcano:</code></td>
+</tr>
+<tr>
+<td>:milky_way: <code>:milky_way:</code></td>
+<td>:partly_sunny: <code>:partly_sunny:</code></td>
+<td>:octocat: <code>:octocat:</code></td>
+</tr>
+<tr>
+<td>:squirrel: <code>:squirrel:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Objects</p>
+<table>
+<thead>
+<tr>
+<th>:bamboo: <code>:bamboo:</code></th>
+<th>:gift_heart: <code>:gift_heart:</code></th>
+<th>:dolls: <code>:dolls:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:school_satchel: <code>:school_satchel:</code></td>
+<td>:mortar_board: <code>:mortar_board:</code></td>
+<td>:flags: <code>:flags:</code></td>
+</tr>
+<tr>
+<td>:fireworks: <code>:fireworks:</code></td>
+<td>:sparkler: <code>:sparkler:</code></td>
+<td>:wind_chime: <code>:wind_chime:</code></td>
+</tr>
+<tr>
+<td>:rice_scene: <code>:rice_scene:</code></td>
+<td>:jack_o_lantern: <code>:jack_o_lantern:</code></td>
+<td>:ghost: <code>:ghost:</code></td>
+</tr>
+<tr>
+<td>:santa: <code>:santa:</code></td>
+<td>:christmas_tree: <code>:christmas_tree:</code></td>
+<td>:gift: <code>:gift:</code></td>
+</tr>
+<tr>
+<td>:bell: <code>:bell:</code></td>
+<td>:no_bell: <code>:no_bell:</code></td>
+<td>:tanabata_tree: <code>:tanabata_tree:</code></td>
+</tr>
+<tr>
+<td>:tada: <code>:tada:</code></td>
+<td>:confetti_ball: <code>:confetti_ball:</code></td>
+<td>:balloon: <code>:balloon:</code></td>
+</tr>
+<tr>
+<td>:crystal_ball: <code>:crystal_ball:</code></td>
+<td>:cd: <code>:cd:</code></td>
+<td>:dvd: <code>:dvd:</code></td>
+</tr>
+<tr>
+<td>:floppy_disk: <code>:floppy_disk:</code></td>
+<td>:camera: <code>:camera:</code></td>
+<td>:video_camera: <code>:video_camera:</code></td>
+</tr>
+<tr>
+<td>:movie_camera: <code>:movie_camera:</code></td>
+<td>:computer: <code>:computer:</code></td>
+<td>:tv: <code>:tv:</code></td>
+</tr>
+<tr>
+<td>:iphone: <code>:iphone:</code></td>
+<td>:phone: <code>:phone:</code></td>
+<td>:telephone: <code>:telephone:</code></td>
+</tr>
+<tr>
+<td>:telephone_receiver: <code>:telephone_receiver:</code></td>
+<td>:pager: <code>:pager:</code></td>
+<td>:fax: <code>:fax:</code></td>
+</tr>
+<tr>
+<td>:minidisc: <code>:minidisc:</code></td>
+<td>:vhs: <code>:vhs:</code></td>
+<td>:sound: <code>:sound:</code></td>
+</tr>
+<tr>
+<td>:speaker: <code>:speaker:</code></td>
+<td>:mute: <code>:mute:</code></td>
+<td>:loudspeaker: <code>:loudspeaker:</code></td>
+</tr>
+<tr>
+<td>:mega: <code>:mega:</code></td>
+<td>:hourglass: <code>:hourglass:</code></td>
+<td>:hourglass_flowing_sand: <code>:hourglass_flowing_sand:</code></td>
+</tr>
+<tr>
+<td>:alarm_clock: <code>:alarm_clock:</code></td>
+<td>:watch: <code>:watch:</code></td>
+<td>:radio: <code>:radio:</code></td>
+</tr>
+<tr>
+<td>:satellite: <code>:satellite:</code></td>
+<td>:loop: <code>:loop:</code></td>
+<td>:mag: <code>:mag:</code></td>
+</tr>
+<tr>
+<td>:mag_right: <code>:mag_right:</code></td>
+<td>:unlock: <code>:unlock:</code></td>
+<td>:lock: <code>:lock:</code></td>
+</tr>
+<tr>
+<td>:lock_with_ink_pen: <code>:lock_with_ink_pen:</code></td>
+<td>:closed_lock_with_key: <code>:closed_lock_with_key:</code></td>
+<td>:key: <code>:key:</code></td>
+</tr>
+<tr>
+<td>:bulb: <code>:bulb:</code></td>
+<td>:flashlight: <code>:flashlight:</code></td>
+<td>:high_brightness: <code>:high_brightness:</code></td>
+</tr>
+<tr>
+<td>:low_brightness: <code>:low_brightness:</code></td>
+<td>:electric_plug: <code>:electric_plug:</code></td>
+<td>:battery: <code>:battery:</code></td>
+</tr>
+<tr>
+<td>:calling: <code>:calling:</code></td>
+<td>:email: <code>:email:</code></td>
+<td>:mailbox: <code>:mailbox:</code></td>
+</tr>
+<tr>
+<td>:postbox: <code>:postbox:</code></td>
+<td>:bath: <code>:bath:</code></td>
+<td>:bathtub: <code>:bathtub:</code></td>
+</tr>
+<tr>
+<td>:shower: <code>:shower:</code></td>
+<td>:toilet: <code>:toilet:</code></td>
+<td>:wrench: <code>:wrench:</code></td>
+</tr>
+<tr>
+<td>:nut_and_bolt: <code>:nut_and_bolt:</code></td>
+<td>:hammer: <code>:hammer:</code></td>
+<td>:seat: <code>:seat:</code></td>
+</tr>
+<tr>
+<td>:moneybag: <code>:moneybag:</code></td>
+<td>:yen: <code>:yen:</code></td>
+<td>:dollar: <code>:dollar:</code></td>
+</tr>
+<tr>
+<td>:pound: <code>:pound:</code></td>
+<td>:euro: <code>:euro:</code></td>
+<td>:credit_card: <code>:credit_card:</code></td>
+</tr>
+<tr>
+<td>:money_with_wings: <code>:money_with_wings:</code></td>
+<td>:e-mail: <code>:e-mail:</code></td>
+<td>:inbox_tray: <code>:inbox_tray:</code></td>
+</tr>
+<tr>
+<td>:outbox_tray: <code>:outbox_tray:</code></td>
+<td>:envelope: <code>:envelope:</code></td>
+<td>:incoming_envelope: <code>:incoming_envelope:</code></td>
+</tr>
+<tr>
+<td>:postal_horn: <code>:postal_horn:</code></td>
+<td>:mailbox_closed: <code>:mailbox_closed:</code></td>
+<td>:mailbox_with_mail: <code>:mailbox_with_mail:</code></td>
+</tr>
+<tr>
+<td>:mailbox_with_no_mail: <code>:mailbox_with_no_mail:</code></td>
+<td>:door: <code>:door:</code></td>
+<td>:smoking: <code>:smoking:</code></td>
+</tr>
+<tr>
+<td>:bomb: <code>:bomb:</code></td>
+<td>:gun: <code>:gun:</code></td>
+<td>:hocho: <code>:hocho:</code></td>
+</tr>
+<tr>
+<td>:pill: <code>:pill:</code></td>
+<td>:syringe: <code>:syringe:</code></td>
+<td>:page_facing_up: <code>:page_facing_up:</code></td>
+</tr>
+<tr>
+<td>:page_with_curl: <code>:page_with_curl:</code></td>
+<td>:bookmark_tabs: <code>:bookmark_tabs:</code></td>
+<td>:bar_chart: <code>:bar_chart:</code></td>
+</tr>
+<tr>
+<td>:chart_with_upwards_trend: <code>:chart_with_upwards_trend:</code></td>
+<td>:chart_with_downwards_trend: <code>:chart_with_downwards_trend:</code></td>
+<td>:scroll: <code>:scroll:</code></td>
+</tr>
+<tr>
+<td>:clipboard: <code>:clipboard:</code></td>
+<td>:calendar: <code>:calendar:</code></td>
+<td>:date: <code>:date:</code></td>
+</tr>
+<tr>
+<td>:card_index: <code>:card_index:</code></td>
+<td>:file_folder: <code>:file_folder:</code></td>
+<td>:open_file_folder: <code>:open_file_folder:</code></td>
+</tr>
+<tr>
+<td>:scissors: <code>:scissors:</code></td>
+<td>:pushpin: <code>:pushpin:</code></td>
+<td>:paperclip: <code>:paperclip:</code></td>
+</tr>
+<tr>
+<td>:black_nib: <code>:black_nib:</code></td>
+<td>:pencil2: <code>:pencil2:</code></td>
+<td>:straight_ruler: <code>:straight_ruler:</code></td>
+</tr>
+<tr>
+<td>:triangular_ruler: <code>:triangular_ruler:</code></td>
+<td>:closed_book: <code>:closed_book:</code></td>
+<td>:green_book: <code>:green_book:</code></td>
+</tr>
+<tr>
+<td>:blue_book: <code>:blue_book:</code></td>
+<td>:orange_book: <code>:orange_book:</code></td>
+<td>:notebook: <code>:notebook:</code></td>
+</tr>
+<tr>
+<td>:notebook_with_decorative_cover: <code>:notebook_with_decorative_cover:</code></td>
+<td>:ledger: <code>:ledger:</code></td>
+<td>:books: <code>:books:</code></td>
+</tr>
+<tr>
+<td>:bookmark: <code>:bookmark:</code></td>
+<td>:name_badge: <code>:name_badge:</code></td>
+<td>:microscope: <code>:microscope:</code></td>
+</tr>
+<tr>
+<td>:telescope: <code>:telescope:</code></td>
+<td>:newspaper: <code>:newspaper:</code></td>
+<td>:football: <code>:football:</code></td>
+</tr>
+<tr>
+<td>:basketball: <code>:basketball:</code></td>
+<td>:soccer: <code>:soccer:</code></td>
+<td>:baseball: <code>:baseball:</code></td>
+</tr>
+<tr>
+<td>:tennis: <code>:tennis:</code></td>
+<td>:8ball: <code>:8ball:</code></td>
+<td>:rugby_football: <code>:rugby_football:</code></td>
+</tr>
+<tr>
+<td>:bowling: <code>:bowling:</code></td>
+<td>:golf: <code>:golf:</code></td>
+<td>:mountain_bicyclist: <code>:mountain_bicyclist:</code></td>
+</tr>
+<tr>
+<td>:bicyclist: <code>:bicyclist:</code></td>
+<td>:horse_racing: <code>:horse_racing:</code></td>
+<td>:snowboarder: <code>:snowboarder:</code></td>
+</tr>
+<tr>
+<td>:swimmer: <code>:swimmer:</code></td>
+<td>:surfer: <code>:surfer:</code></td>
+<td>:ski: <code>:ski:</code></td>
+</tr>
+<tr>
+<td>:spades: <code>:spades:</code></td>
+<td>:hearts: <code>:hearts:</code></td>
+<td>:clubs: <code>:clubs:</code></td>
+</tr>
+<tr>
+<td>:diamonds: <code>:diamonds:</code></td>
+<td>:gem: <code>:gem:</code></td>
+<td>:ring: <code>:ring:</code></td>
+</tr>
+<tr>
+<td>:trophy: <code>:trophy:</code></td>
+<td>:musical_score: <code>:musical_score:</code></td>
+<td>:musical_keyboard: <code>:musical_keyboard:</code></td>
+</tr>
+<tr>
+<td>:violin: <code>:violin:</code></td>
+<td>:space_invader: <code>:space_invader:</code></td>
+<td>:video_game: <code>:video_game:</code></td>
+</tr>
+<tr>
+<td>:black_joker: <code>:black_joker:</code></td>
+<td>:flower_playing_cards: <code>:flower_playing_cards:</code></td>
+<td>:game_die: <code>:game_die:</code></td>
+</tr>
+<tr>
+<td>:dart: <code>:dart:</code></td>
+<td>:mahjong: <code>:mahjong:</code></td>
+<td>:clapper: <code>:clapper:</code></td>
+</tr>
+<tr>
+<td>:memo: <code>:memo:</code></td>
+<td>:pencil: <code>:pencil:</code></td>
+<td>:book: <code>:book:</code></td>
+</tr>
+<tr>
+<td>:art: <code>:art:</code></td>
+<td>:microphone: <code>:microphone:</code></td>
+<td>:headphones: <code>:headphones:</code></td>
+</tr>
+<tr>
+<td>:trumpet: <code>:trumpet:</code></td>
+<td>:saxophone: <code>:saxophone:</code></td>
+<td>:guitar: <code>:guitar:</code></td>
+</tr>
+<tr>
+<td>:shoe: <code>:shoe:</code></td>
+<td>:sandal: <code>:sandal:</code></td>
+<td>:high_heel: <code>:high_heel:</code></td>
+</tr>
+<tr>
+<td>:lipstick: <code>:lipstick:</code></td>
+<td>:boot: <code>:boot:</code></td>
+<td>:shirt: <code>:shirt:</code></td>
+</tr>
+<tr>
+<td>:tshirt: <code>:tshirt:</code></td>
+<td>:necktie: <code>:necktie:</code></td>
+<td>:womans_clothes: <code>:womans_clothes:</code></td>
+</tr>
+<tr>
+<td>:dress: <code>:dress:</code></td>
+<td>:running_shirt_with_sash: <code>:running_shirt_with_sash:</code></td>
+<td>:jeans: <code>:jeans:</code></td>
+</tr>
+<tr>
+<td>:kimono: <code>:kimono:</code></td>
+<td>:bikini: <code>:bikini:</code></td>
+<td>:ribbon: <code>:ribbon:</code></td>
+</tr>
+<tr>
+<td>:tophat: <code>:tophat:</code></td>
+<td>:crown: <code>:crown:</code></td>
+<td>:womans_hat: <code>:womans_hat:</code></td>
+</tr>
+<tr>
+<td>:mans_shoe: <code>:mans_shoe:</code></td>
+<td>:closed_umbrella: <code>:closed_umbrella:</code></td>
+<td>:briefcase: <code>:briefcase:</code></td>
+</tr>
+<tr>
+<td>:handbag: <code>:handbag:</code></td>
+<td>:pouch: <code>:pouch:</code></td>
+<td>:purse: <code>:purse:</code></td>
+</tr>
+<tr>
+<td>:eyeglasses: <code>:eyeglasses:</code></td>
+<td>:fishing_pole_and_fish: <code>:fishing_pole_and_fish:</code></td>
+<td>:coffee: <code>:coffee:</code></td>
+</tr>
+<tr>
+<td>:tea: <code>:tea:</code></td>
+<td>:sake: <code>:sake:</code></td>
+<td>:baby_bottle: <code>:baby_bottle:</code></td>
+</tr>
+<tr>
+<td>:beer: <code>:beer:</code></td>
+<td>:beers: <code>:beers:</code></td>
+<td>:cocktail: <code>:cocktail:</code></td>
+</tr>
+<tr>
+<td>:tropical_drink: <code>:tropical_drink:</code></td>
+<td>:wine_glass: <code>:wine_glass:</code></td>
+<td>:fork_and_knife: <code>:fork_and_knife:</code></td>
+</tr>
+<tr>
+<td>:pizza: <code>:pizza:</code></td>
+<td>:hamburger: <code>:hamburger:</code></td>
+<td>:fries: <code>:fries:</code></td>
+</tr>
+<tr>
+<td>:poultry_leg: <code>:poultry_leg:</code></td>
+<td>:meat_on_bone: <code>:meat_on_bone:</code></td>
+<td>:spaghetti: <code>:spaghetti:</code></td>
+</tr>
+<tr>
+<td>:curry: <code>:curry:</code></td>
+<td>:fried_shrimp: <code>:fried_shrimp:</code></td>
+<td>:bento: <code>:bento:</code></td>
+</tr>
+<tr>
+<td>:sushi: <code>:sushi:</code></td>
+<td>:fish_cake: <code>:fish_cake:</code></td>
+<td>:rice_ball: <code>:rice_ball:</code></td>
+</tr>
+<tr>
+<td>:rice_cracker: <code>:rice_cracker:</code></td>
+<td>:rice: <code>:rice:</code></td>
+<td>:ramen: <code>:ramen:</code></td>
+</tr>
+<tr>
+<td>:stew: <code>:stew:</code></td>
+<td>:oden: <code>:oden:</code></td>
+<td>:dango: <code>:dango:</code></td>
+</tr>
+<tr>
+<td>:egg: <code>:egg:</code></td>
+<td>:bread: <code>:bread:</code></td>
+<td>:doughnut: <code>:doughnut:</code></td>
+</tr>
+<tr>
+<td>:custard: <code>:custard:</code></td>
+<td>:icecream: <code>:icecream:</code></td>
+<td>:ice_cream: <code>:ice_cream:</code></td>
+</tr>
+<tr>
+<td>:shaved_ice: <code>:shaved_ice:</code></td>
+<td>:birthday: <code>:birthday:</code></td>
+<td>:cake: <code>:cake:</code></td>
+</tr>
+<tr>
+<td>:cookie: <code>:cookie:</code></td>
+<td>:chocolate_bar: <code>:chocolate_bar:</code></td>
+<td>:candy: <code>:candy:</code></td>
+</tr>
+<tr>
+<td>:lollipop: <code>:lollipop:</code></td>
+<td>:honey_pot: <code>:honey_pot:</code></td>
+<td>:apple: <code>:apple:</code></td>
+</tr>
+<tr>
+<td>:green_apple: <code>:green_apple:</code></td>
+<td>:tangerine: <code>:tangerine:</code></td>
+<td>:lemon: <code>:lemon:</code></td>
+</tr>
+<tr>
+<td>:cherries: <code>:cherries:</code></td>
+<td>:grapes: <code>:grapes:</code></td>
+<td>:watermelon: <code>:watermelon:</code></td>
+</tr>
+<tr>
+<td>:strawberry: <code>:strawberry:</code></td>
+<td>:peach: <code>:peach:</code></td>
+<td>:melon: <code>:melon:</code></td>
+</tr>
+<tr>
+<td>:banana: <code>:banana:</code></td>
+<td>:pear: <code>:pear:</code></td>
+<td>:pineapple: <code>:pineapple:</code></td>
+</tr>
+<tr>
+<td>:sweet_potato: <code>:sweet_potato:</code></td>
+<td>:eggplant: <code>:eggplant:</code></td>
+<td>:tomato: <code>:tomato:</code></td>
+</tr>
+<tr>
+<td>:corn: <code>:corn:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Places</p>
+<table>
+<thead>
+<tr>
+<th>:house: <code>:house:</code></th>
+<th>:house_with_garden: <code>:house_with_garden:</code></th>
+<th>:school: <code>:school:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:office: <code>:office:</code></td>
+<td>:post_office: <code>:post_office:</code></td>
+<td>:hospital: <code>:hospital:</code></td>
+</tr>
+<tr>
+<td>:bank: <code>:bank:</code></td>
+<td>:convenience_store: <code>:convenience_store:</code></td>
+<td>:love_hotel: <code>:love_hotel:</code></td>
+</tr>
+<tr>
+<td>:hotel: <code>:hotel:</code></td>
+<td>:wedding: <code>:wedding:</code></td>
+<td>:church: <code>:church:</code></td>
+</tr>
+<tr>
+<td>:department_store: <code>:department_store:</code></td>
+<td>:european_post_office: <code>:european_post_office:</code></td>
+<td>:city_sunrise: <code>:city_sunrise:</code></td>
+</tr>
+<tr>
+<td>:city_sunset: <code>:city_sunset:</code></td>
+<td>:japanese_castle: <code>:japanese_castle:</code></td>
+<td>:european_castle: <code>:european_castle:</code></td>
+</tr>
+<tr>
+<td>:tent: <code>:tent:</code></td>
+<td>:factory: <code>:factory:</code></td>
+<td>:tokyo_tower: <code>:tokyo_tower:</code></td>
+</tr>
+<tr>
+<td>:japan: <code>:japan:</code></td>
+<td>:mount_fuji: <code>:mount_fuji:</code></td>
+<td>:sunrise_over_mountains: <code>:sunrise_over_mountains:</code></td>
+</tr>
+<tr>
+<td>:sunrise: <code>:sunrise:</code></td>
+<td>:stars: <code>:stars:</code></td>
+<td>:statue_of_liberty: <code>:statue_of_liberty:</code></td>
+</tr>
+<tr>
+<td>:bridge_at_night: <code>:bridge_at_night:</code></td>
+<td>:carousel_horse: <code>:carousel_horse:</code></td>
+<td>:rainbow: <code>:rainbow:</code></td>
+</tr>
+<tr>
+<td>:ferris_wheel: <code>:ferris_wheel:</code></td>
+<td>:fountain: <code>:fountain:</code></td>
+<td>:roller_coaster: <code>:roller_coaster:</code></td>
+</tr>
+<tr>
+<td>:ship: <code>:ship:</code></td>
+<td>:speedboat: <code>:speedboat:</code></td>
+<td>:boat: <code>:boat:</code></td>
+</tr>
+<tr>
+<td>:sailboat: <code>:sailboat:</code></td>
+<td>:rowboat: <code>:rowboat:</code></td>
+<td>:anchor: <code>:anchor:</code></td>
+</tr>
+<tr>
+<td>:rocket: <code>:rocket:</code></td>
+<td>:airplane: <code>:airplane:</code></td>
+<td>:helicopter: <code>:helicopter:</code></td>
+</tr>
+<tr>
+<td>:steam_locomotive: <code>:steam_locomotive:</code></td>
+<td>:tram: <code>:tram:</code></td>
+<td>:mountain_railway: <code>:mountain_railway:</code></td>
+</tr>
+<tr>
+<td>:bike: <code>:bike:</code></td>
+<td>:aerial_tramway: <code>:aerial_tramway:</code></td>
+<td>:suspension_railway: <code>:suspension_railway:</code></td>
+</tr>
+<tr>
+<td>:mountain_cableway: <code>:mountain_cableway:</code></td>
+<td>:tractor: <code>:tractor:</code></td>
+<td>:blue_car: <code>:blue_car:</code></td>
+</tr>
+<tr>
+<td>:oncoming_automobile: <code>:oncoming_automobile:</code></td>
+<td>:car: <code>:car:</code></td>
+<td>:red_car: <code>:red_car:</code></td>
+</tr>
+<tr>
+<td>:taxi: <code>:taxi:</code></td>
+<td>:oncoming_taxi: <code>:oncoming_taxi:</code></td>
+<td>:articulated_lorry: <code>:articulated_lorry:</code></td>
+</tr>
+<tr>
+<td>:bus: <code>:bus:</code></td>
+<td>:oncoming_bus: <code>:oncoming_bus:</code></td>
+<td>:rotating_light: <code>:rotating_light:</code></td>
+</tr>
+<tr>
+<td>:police_car: <code>:police_car:</code></td>
+<td>:oncoming_police_car: <code>:oncoming_police_car:</code></td>
+<td>:fire_engine: <code>:fire_engine:</code></td>
+</tr>
+<tr>
+<td>:ambulance: <code>:ambulance:</code></td>
+<td>:minibus: <code>:minibus:</code></td>
+<td>:truck: <code>:truck:</code></td>
+</tr>
+<tr>
+<td>:train: <code>:train:</code></td>
+<td>:station: <code>:station:</code></td>
+<td>:train2: <code>:train2:</code></td>
+</tr>
+<tr>
+<td>:bullettrain_front: <code>:bullettrain_front:</code></td>
+<td>:bullettrain_side: <code>:bullettrain_side:</code></td>
+<td>:light_rail: <code>:light_rail:</code></td>
+</tr>
+<tr>
+<td>:monorail: <code>:monorail:</code></td>
+<td>:railway_car: <code>:railway_car:</code></td>
+<td>:trolleybus: <code>:trolleybus:</code></td>
+</tr>
+<tr>
+<td>:ticket: <code>:ticket:</code></td>
+<td>:fuelpump: <code>:fuelpump:</code></td>
+<td>:vertical_traffic_light: <code>:vertical_traffic_light:</code></td>
+</tr>
+<tr>
+<td>:traffic_light: <code>:traffic_light:</code></td>
+<td>:warning: <code>:warning:</code></td>
+<td>:construction: <code>:construction:</code></td>
+</tr>
+<tr>
+<td>:beginner: <code>:beginner:</code></td>
+<td>:atm: <code>:atm:</code></td>
+<td>:slot_machine: <code>:slot_machine:</code></td>
+</tr>
+<tr>
+<td>:busstop: <code>:busstop:</code></td>
+<td>:barber: <code>:barber:</code></td>
+<td>:hotsprings: <code>:hotsprings:</code></td>
+</tr>
+<tr>
+<td>:checkered_flag: <code>:checkered_flag:</code></td>
+<td>:crossed_flags: <code>:crossed_flags:</code></td>
+<td>:izakaya_lantern: <code>:izakaya_lantern:</code></td>
+</tr>
+<tr>
+<td>:moyai: <code>:moyai:</code></td>
+<td>:circus_tent: <code>:circus_tent:</code></td>
+<td>:performing_arts: <code>:performing_arts:</code></td>
+</tr>
+<tr>
+<td>:round_pushpin: <code>:round_pushpin:</code></td>
+<td>:triangular_flag_on_post: <code>:triangular_flag_on_post:</code></td>
+<td>:jp: <code>:jp:</code></td>
+</tr>
+<tr>
+<td>:kr: <code>:kr:</code></td>
+<td>:cn: <code>:cn:</code></td>
+<td>:us: <code>:us:</code></td>
+</tr>
+<tr>
+<td>:fr: <code>:fr:</code></td>
+<td>:es: <code>:es:</code></td>
+<td>:it: <code>:it:</code></td>
+</tr>
+<tr>
+<td>:ru: <code>:ru:</code></td>
+<td>:gb: <code>:gb:</code></td>
+<td>:uk: <code>:uk:</code></td>
+</tr>
+<tr>
+<td>:de: <code>:de:</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>Symbols</p>
+<table>
+<thead>
+<tr>
+<th>:one: <code>:one:</code></th>
+<th>:two: <code>:two:</code></th>
+<th>:three: <code>:three:</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>:four: <code>:four:</code></td>
+<td>:five: <code>:five:</code></td>
+<td>:six: <code>:six:</code></td>
+</tr>
+<tr>
+<td>:seven: <code>:seven:</code></td>
+<td>:eight: <code>:eight:</code></td>
+<td>:nine: <code>:nine:</code></td>
+</tr>
+<tr>
+<td>:keycap_ten: <code>:keycap_ten:</code></td>
+<td>:1234: <code>:1234:</code></td>
+<td>:zero: <code>:zero:</code></td>
+</tr>
+<tr>
+<td>:hash: <code>:hash:</code></td>
+<td>:symbols: <code>:symbols:</code></td>
+<td>:arrow_backward: <code>:arrow_backward:</code></td>
+</tr>
+<tr>
+<td>:arrow_down: <code>:arrow_down:</code></td>
+<td>:arrow_forward: <code>:arrow_forward:</code></td>
+<td>:arrow_left: <code>:arrow_left:</code></td>
+</tr>
+<tr>
+<td>:capital_abcd: <code>:capital_abcd:</code></td>
+<td>:abcd: <code>:abcd:</code></td>
+<td>:abc: <code>:abc:</code></td>
+</tr>
+<tr>
+<td>:arrow_lower_left: <code>:arrow_lower_left:</code></td>
+<td>:arrow_lower_right: <code>:arrow_lower_right:</code></td>
+<td>:arrow_right: <code>:arrow_right:</code></td>
+</tr>
+<tr>
+<td>:arrow_up: <code>:arrow_up:</code></td>
+<td>:arrow_upper_left: <code>:arrow_upper_left:</code></td>
+<td>:arrow_upper_right: <code>:arrow_upper_right:</code></td>
+</tr>
+<tr>
+<td>:arrow_double_down: <code>:arrow_double_down:</code></td>
+<td>:arrow_double_up: <code>:arrow_double_up:</code></td>
+<td>:arrow_down_small: <code>:arrow_down_small:</code></td>
+</tr>
+<tr>
+<td>:arrow_heading_down: <code>:arrow_heading_down:</code></td>
+<td>:arrow_heading_up: <code>:arrow_heading_up:</code></td>
+<td>:leftwards_arrow_with_hook: <code>:leftwards_arrow_with_hook:</code></td>
+</tr>
+<tr>
+<td>:arrow_right_hook: <code>:arrow_right_hook:</code></td>
+<td>:left_right_arrow: <code>:left_right_arrow:</code></td>
+<td>:arrow_up_down: <code>:arrow_up_down:</code></td>
+</tr>
+<tr>
+<td>:arrow_up_small: <code>:arrow_up_small:</code></td>
+<td>:arrows_clockwise: <code>:arrows_clockwise:</code></td>
+<td>:arrows_counterclockwise: <code>:arrows_counterclockwise:</code></td>
+</tr>
+<tr>
+<td>:rewind: <code>:rewind:</code></td>
+<td>:fast_forward: <code>:fast_forward:</code></td>
+<td>:information_source: <code>:information_source:</code></td>
+</tr>
+<tr>
+<td>:ok: <code>:ok:</code></td>
+<td>:twisted_rightwards_arrows: <code>:twisted_rightwards_arrows:</code></td>
+<td>:repeat: <code>:repeat:</code></td>
+</tr>
+<tr>
+<td>:repeat_one: <code>:repeat_one:</code></td>
+<td>:new: <code>:new:</code></td>
+<td>:top: <code>:top:</code></td>
+</tr>
+<tr>
+<td>:up: <code>:up:</code></td>
+<td>:cool: <code>:cool:</code></td>
+<td>:free: <code>:free:</code></td>
+</tr>
+<tr>
+<td>:ng: <code>:ng:</code></td>
+<td>:cinema: <code>:cinema:</code></td>
+<td>:koko: <code>:koko:</code></td>
+</tr>
+<tr>
+<td>:signal_strength: <code>:signal_strength:</code></td>
+<td>:u5272: <code>:u5272:</code></td>
+<td>:u5408: <code>:u5408:</code></td>
+</tr>
+<tr>
+<td>:u55b6: <code>:u55b6:</code></td>
+<td>:u6307: <code>:u6307:</code></td>
+<td>:u6708: <code>:u6708:</code></td>
+</tr>
+<tr>
+<td>:u6709: <code>:u6709:</code></td>
+<td>:u6e80: <code>:u6e80:</code></td>
+<td>:u7121: <code>:u7121:</code></td>
+</tr>
+<tr>
+<td>:u7533: <code>:u7533:</code></td>
+<td>:u7a7a: <code>:u7a7a:</code></td>
+<td>:u7981: <code>:u7981:</code></td>
+</tr>
+<tr>
+<td>:sa: <code>:sa:</code></td>
+<td>:restroom: <code>:restroom:</code></td>
+<td>:mens: <code>:mens:</code></td>
+</tr>
+<tr>
+<td>:womens: <code>:womens:</code></td>
+<td>:baby_symbol: <code>:baby_symbol:</code></td>
+<td>:no_smoking: <code>:no_smoking:</code></td>
+</tr>
+<tr>
+<td>:parking: <code>:parking:</code></td>
+<td>:wheelchair: <code>:wheelchair:</code></td>
+<td>:metro: <code>:metro:</code></td>
+</tr>
+<tr>
+<td>:baggage_claim: <code>:baggage_claim:</code></td>
+<td>:accept: <code>:accept:</code></td>
+<td>:wc: <code>:wc:</code></td>
+</tr>
+<tr>
+<td>:potable_water: <code>:potable_water:</code></td>
+<td>:put_litter_in_its_place: <code>:put_litter_in_its_place:</code></td>
+<td>:secret: <code>:secret:</code></td>
+</tr>
+<tr>
+<td>:congratulations: <code>:congratulations:</code></td>
+<td>:m: <code>:m:</code></td>
+<td>:passport_control: <code>:passport_control:</code></td>
+</tr>
+<tr>
+<td>:left_luggage: <code>:left_luggage:</code></td>
+<td>:customs: <code>:customs:</code></td>
+<td>:ideograph_advantage: <code>:ideograph_advantage:</code></td>
+</tr>
+<tr>
+<td>:cl: <code>:cl:</code></td>
+<td>:sos: <code>:sos:</code></td>
+<td>:id: <code>:id:</code></td>
+</tr>
+<tr>
+<td>:no_entry_sign: <code>:no_entry_sign:</code></td>
+<td>:underage: <code>:underage:</code></td>
+<td>:no_mobile_phones: <code>:no_mobile_phones:</code></td>
+</tr>
+<tr>
+<td>:do_not_litter: <code>:do_not_litter:</code></td>
+<td>:non-potable_water: <code>:non-potable_water:</code></td>
+<td>:no_bicycles: <code>:no_bicycles:</code></td>
+</tr>
+<tr>
+<td>:no_pedestrians: <code>:no_pedestrians:</code></td>
+<td>:children_crossing: <code>:children_crossing:</code></td>
+<td>:no_entry: <code>:no_entry:</code></td>
+</tr>
+<tr>
+<td>:eight_spoked_asterisk: <code>:eight_spoked_asterisk:</code></td>
+<td>:eight_pointed_black_star: <code>:eight_pointed_black_star:</code></td>
+<td>:heart_decoration: <code>:heart_decoration:</code></td>
+</tr>
+<tr>
+<td>:vs: <code>:vs:</code></td>
+<td>:vibration_mode: <code>:vibration_mode:</code></td>
+<td>:mobile_phone_off: <code>:mobile_phone_off:</code></td>
+</tr>
+<tr>
+<td>:chart: <code>:chart:</code></td>
+<td>:currency_exchange: <code>:currency_exchange:</code></td>
+<td>:aries: <code>:aries:</code></td>
+</tr>
+<tr>
+<td>:taurus: <code>:taurus:</code></td>
+<td>:gemini: <code>:gemini:</code></td>
+<td>:cancer: <code>:cancer:</code></td>
+</tr>
+<tr>
+<td>:leo: <code>:leo:</code></td>
+<td>:virgo: <code>:virgo:</code></td>
+<td>:libra: <code>:libra:</code></td>
+</tr>
+<tr>
+<td>:scorpius: <code>:scorpius:</code></td>
+<td>:sagittarius: <code>:sagittarius:</code></td>
+<td>:capricorn: <code>:capricorn:</code></td>
+</tr>
+<tr>
+<td>:aquarius: <code>:aquarius:</code></td>
+<td>:pisces: <code>:pisces:</code></td>
+<td>:ophiuchus: <code>:ophiuchus:</code></td>
+</tr>
+<tr>
+<td>:six_pointed_star: <code>:six_pointed_star:</code></td>
+<td>:negative_squared_cross_mark: <code>:negative_squared_cross_mark:</code></td>
+<td>:a: <code>:a:</code></td>
+</tr>
+<tr>
+<td>:b: <code>:b:</code></td>
+<td>:ab: <code>:ab:</code></td>
+<td>:o2: <code>:o2:</code></td>
+</tr>
+<tr>
+<td>:diamond_shape_with_a_dot_inside: <code>:diamond_shape_with_a_dot_inside:</code></td>
+<td>:recycle: <code>:recycle:</code></td>
+<td>:end: <code>:end:</code></td>
+</tr>
+<tr>
+<td>:on: <code>:on:</code></td>
+<td>:soon: <code>:soon:</code></td>
+<td>:clock1: <code>:clock1:</code></td>
+</tr>
+<tr>
+<td>:clock130: <code>:clock130:</code></td>
+<td>:clock10: <code>:clock10:</code></td>
+<td>:clock1030: <code>:clock1030:</code></td>
+</tr>
+<tr>
+<td>:clock11: <code>:clock11:</code></td>
+<td>:clock1130: <code>:clock1130:</code></td>
+<td>:clock12: <code>:clock12:</code></td>
+</tr>
+<tr>
+<td>:clock1230: <code>:clock1230:</code></td>
+<td>:clock2: <code>:clock2:</code></td>
+<td>:clock230: <code>:clock230:</code></td>
+</tr>
+<tr>
+<td>:clock3: <code>:clock3:</code></td>
+<td>:clock330: <code>:clock330:</code></td>
+<td>:clock4: <code>:clock4:</code></td>
+</tr>
+<tr>
+<td>:clock430: <code>:clock430:</code></td>
+<td>:clock5: <code>:clock5:</code></td>
+<td>:clock530: <code>:clock530:</code></td>
+</tr>
+<tr>
+<td>:clock6: <code>:clock6:</code></td>
+<td>:clock630: <code>:clock630:</code></td>
+<td>:clock7: <code>:clock7:</code></td>
+</tr>
+<tr>
+<td>:clock730: <code>:clock730:</code></td>
+<td>:clock8: <code>:clock8:</code></td>
+<td>:clock830: <code>:clock830:</code></td>
+</tr>
+<tr>
+<td>:clock9: <code>:clock9:</code></td>
+<td>:clock930: <code>:clock930:</code></td>
+<td>:heavy_dollar_sign: <code>:heavy_dollar_sign:</code></td>
+</tr>
+<tr>
+<td>:copyright: <code>:copyright:</code></td>
+<td>:registered: <code>:registered:</code></td>
+<td>:tm: <code>:tm:</code></td>
+</tr>
+<tr>
+<td>:x: <code>:x:</code></td>
+<td>:heavy_exclamation_mark: <code>:heavy_exclamation_mark:</code></td>
+<td>:bangbang: <code>:bangbang:</code></td>
+</tr>
+<tr>
+<td>:interrobang: <code>:interrobang:</code></td>
+<td>:o: <code>:o:</code></td>
+<td>:heavy_multiplication_x: <code>:heavy_multiplication_x:</code></td>
+</tr>
+<tr>
+<td>:heavy_plus_sign: <code>:heavy_plus_sign:</code></td>
+<td>:heavy_minus_sign: <code>:heavy_minus_sign:</code></td>
+<td>:heavy_division_sign: <code>:heavy_division_sign:</code></td>
+</tr>
+<tr>
+<td>:white_flower: <code>:white_flower:</code></td>
+<td>:100: <code>:100:</code></td>
+<td>:heavy_check_mark: <code>:heavy_check_mark:</code></td>
+</tr>
+<tr>
+<td>:ballot_box_with_check: <code>:ballot_box_with_check:</code></td>
+<td>:radio_button: <code>:radio_button:</code></td>
+<td>:link: <code>:link:</code></td>
+</tr>
+<tr>
+<td>:curly_loop: <code>:curly_loop:</code></td>
+<td>:wavy_dash: <code>:wavy_dash:</code></td>
+<td>:part_alternation_mark: <code>:part_alternation_mark:</code></td>
+</tr>
+<tr>
+<td>:trident: <code>:trident:</code></td>
+<td>:black_square: <code>:black_square:</code></td>
+<td>:white_square: <code>:white_square:</code></td>
+</tr>
+<tr>
+<td>:white_check_mark: <code>:white_check_mark:</code></td>
+<td>:black_square_button: <code>:black_square_button:</code></td>
+<td>:white_square_button: <code>:white_square_button:</code></td>
+</tr>
+<tr>
+<td>:black_circle: <code>:black_circle:</code></td>
+<td>:white_circle: <code>:white_circle:</code></td>
+<td>:red_circle: <code>:red_circle:</code></td>
+</tr>
+<tr>
+<td>:large_blue_circle: <code>:large_blue_circle:</code></td>
+<td>:large_blue_diamond: <code>:large_blue_diamond:</code></td>
+<td>:large_orange_diamond: <code>:large_orange_diamond:</code></td>
+</tr>
+<tr>
+<td>:small_blue_diamond: <code>:small_blue_diamond:</code></td>
+<td>:small_orange_diamond: <code>:small_orange_diamond:</code></td>
+<td>:small_red_triangle: <code>:small_red_triangle:</code></td>
+</tr>
+<tr>
+<td>:small_red_triangle_down: <code>:small_red_triangle_down:</code></td>
+<td>:shipit: <code>:shipit:</code></td>
+<td></td>
+</tr>
+</tbody></table>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/Elbenhorn.github.io/about" rel="external nofollow noreferrer">HornDeng</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://github.com/Elbenhorn/Elbenhorn.github.io/Elbenhorn.github.io/2021/01/29/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/">https://github.com/Elbenhorn/Elbenhorn.github.io/Elbenhorn.github.io/2021/01/29/Markdown%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/Elbenhorn.github.io/about" target="_blank">HornDeng</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/Elbenhorn.github.io/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/Elbenhorn.github.io/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/Elbenhorn.github.io/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/Elbenhorn.github.io/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/Elbenhorn.github.io/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/Elbenhorn.github.io/2021/02/02/%E5%A4%A7%E4%BD%9C%E4%B8%9A%EF%BC%9A%E6%B1%82%E5%87%B8%E5%8C%85%E9%9D%A2%E7%A7%AF/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Elbenhorn.github.io/medias/featureimages/23.jpg" class="responsive-img" alt="大作业：求凸包面积">
+                        
+                        <span class="card-title">大作业：求凸包面积</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-02
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            HornDeng
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/Elbenhorn.github.io/tags/%E8%92%99%E7%89%B9%E5%8D%A1%E6%B4%9B%E7%AE%97%E6%B3%95-%E5%87%B8%E5%8C%85%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">蒙特卡洛算法  凸包算法</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/Elbenhorn.github.io/2021/01/21/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/Elbenhorn.github.io/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            HornDeng
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/Elbenhorn.github.io/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/Elbenhorn.github.io/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/Elbenhorn.github.io/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/Elbenhorn.github.io/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/Elbenhorn.github.io/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/Elbenhorn.github.io/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='false'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/Elbenhorn.github.io/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2021</span>
+            
+            <span id="year">2021</span>
+            <a href="/Elbenhorn.github.io/about" target="_blank">HornDeng</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Elbenhorn" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:2756029781@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2756029781" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2756029781" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/Elbenhorn.github.io/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/Elbenhorn.github.io/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/Elbenhorn.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="/Elbenhorn.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/Elbenhorn.github.io/libs/aos/aos.js"></script>
+    <script src="/Elbenhorn.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/Elbenhorn.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/Elbenhorn.github.io/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/Elbenhorn.github.io/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/Elbenhorn.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/Elbenhorn.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
