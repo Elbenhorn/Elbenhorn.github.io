@@ -30,6 +30,8 @@
     <script src="/Elbenhorn.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/Elbenhorn.github.io/atom.xml" title="Horn'Page" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
 
@@ -473,14 +475,32 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    878
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    3 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/Elbenhorn.github.io/libs/prism/prism.css">
         
 
         
@@ -488,21 +508,23 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="conda-Linux指令"><a href="#conda-Linux指令" class="headerlink" title="conda Linux指令"></a>conda Linux指令</h1><p>检查gpu是否可用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tf.test.is_gpu_available()</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-tf.test.is_gpu_available()" data-language="tf.test.is_gpu_available()"><code class="language-tf.test.is_gpu_available()">tf.test.is_gpu_available()<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>查看可用的tf版本：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">anaconda search -t conda tensorflow-gpu</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">anaconda search -t conda tensorflow-gpu<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>查看进程</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">top</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">top<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <h1 id="Tensorflow代码"><a href="#Tensorflow代码" class="headerlink" title="Tensorflow代码"></a>Tensorflow代码</h1><p>接收要保存的初始化参数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">checkpoint &#x3D; tf.train.Checkpoint(model&#x3D;model)</span><br><span class="line">manager &#x3D; tf.train.CheckpointManager(checkpoint, directory&#x3D;&#39;.&#x2F;save&#39;, max_to_keep&#x3D;3)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">checkpoint = tf.train.Checkpoint(model=model)
+manager = tf.train.CheckpointManager(checkpoint, directory='./save', max_to_keep=3)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>保存参数，<code>save_path_with_prefix</code> 是保存文件的<strong>目录 + 前缀</strong>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">checkpoint.save(save_path_with_prefix)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">checkpoint.save(save_path_with_prefix)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 <h3 id="正态分布tf-truncated-normal-initializer-和tf-random-normal-initializer-，"><a href="#正态分布tf-truncated-normal-initializer-和tf-random-normal-initializer-，" class="headerlink" title="正态分布tf.truncated_normal_initializer()和tf.random_normal_initializer()，"></a>正态分布tf.truncated_normal_initializer()和tf.random_normal_initializer()，</h3><p>前者为从截断的正态分布中输出<strong>随机值</strong>。生成的值服从具有指定平均值和标准偏差的正态分布，如果生成的值大于平均值2个标准偏差的值则丢弃重新选择。<br>在tf.truncated_normal中如果x的取值在区间（μ-2σ，μ+2σ）之外则重新进行选择。这样保证了生成的值都在均值附近。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tf.truncated_normal(shape, mean&#x3D;0.0, stddev&#x3D;1.0, dtype&#x3D;tf.float32, seed&#x3D;None, name&#x3D;None)</span><br><span class="line">tf.random_normal(shape, mean&#x3D;0.0, stddev&#x3D;1.0, dtype&#x3D;tf.float32, seed&#x3D;None, name&#x3D;None)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">tf.truncated_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)
+tf.random_normal(shape, mean=0.0, stddev=1.0, dtype=tf.float32, seed=None, name=None)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>参数:</p>
 <ul>
 <li>shape: 一维的张量，也是输出的张量。</li>
@@ -512,19 +534,83 @@
 <li>seed: 一个整数，当设置之后，每次生成的随机数都一样。</li>
 <li>name: 操作的名字。</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tf.cast(a,dtype)#数值精度转换或类型转换</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h3 id="创建全0，全1张量"><a href="#创建全0，全1张量" class="headerlink" title="创建全0，全1张量"></a>创建全0，全1张量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tf.zeros(shape)</span><br><span class="line">tf.ones(shape)</span><br><span class="line">tf.zeros_like()</span><br><span class="line">tf.ones_like()</span><br><span class="line">tf.fill(shape,value)#创建形状shape，值value的张量</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">tf.cast(a,dtype)#数值精度转换或类型转换
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="创建全0，全1张量"><a href="#创建全0，全1张量" class="headerlink" title="创建全0，全1张量"></a>创建全0，全1张量</h3><pre class="line-numbers language-none"><code class="language-none">tf.zeros(shape)
+tf.ones(shape)
+tf.zeros_like()
+tf.ones_like()
+tf.fill(shape,value)#创建形状shape，值value的张量<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>正态分布，高斯分布，均匀分布</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tf.random.normal(shape,mean,stddv)</span><br><span class="line">tf.</span><br></pre></td></tr></table></figure>
-<h3 id="tf-ruduce-mean降维或者求均值"><a href="#tf-ruduce-mean降维或者求均值" class="headerlink" title="tf.ruduce_mean降维或者求均值"></a>tf.ruduce_mean降维或者求均值</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">reduce_mean(input_tensor,</span><br><span class="line">                axis&#x3D;None,</span><br><span class="line">                keep_dims&#x3D;False,</span><br><span class="line">                name&#x3D;None,</span><br><span class="line">                reduction_indices&#x3D;None)</span><br></pre></td></tr></table></figure>
+<pre class="line-numbers language-none"><code class="language-none">tf.random.normal(shape,mean,stddv)
+tf.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h3 id="tf-ruduce-mean降维或者求均值"><a href="#tf-ruduce-mean降维或者求均值" class="headerlink" title="tf.ruduce_mean降维或者求均值"></a>tf.ruduce_mean降维或者求均值</h3><pre class="line-numbers language-none"><code class="language-none">reduce_mean(input_tensor,
+                axis=None,
+                keep_dims=False,
+                name=None,
+                reduction_indices=None)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <ul>
 <li>第一个参数input_tensor： 输入的待降维的tensor;</li>
 <li>第二个参数axis： 指定的轴，如果不指定，则计算所有元素的均值;</li>
 <li>第三个参数keep_dims：是否降维度，设置为True，输出的结果保持输入tensor的形状，设置为False，输出结果会降低维度;</li>
 <li>第四个参数name： 操作的名称;</li>
 </ul>
-<h3 id="tf-one-hot-独热编码"><a href="#tf-one-hot-独热编码" class="headerlink" title="tf.one_hot()独热编码"></a>tf.one_hot()独热编码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">one_hot(</span><br><span class="line">    indices,        #输入的tensor，在深度学习中一般是给定的labels，通常是数字列表，属于一维输入，也可以是多维。</span><br><span class="line">    depth,          #一个标量，用于定义一个 one hot 维度的深度</span><br><span class="line">    on_value&#x3D;None,  #定义在 indices[j] &#x3D; i 时填充输出的值的标量，默认为1</span><br><span class="line">    off_value&#x3D;None, #定义在 indices[j] !&#x3D; i 时填充输出的值的标量，默认为0</span><br><span class="line">    axis&#x3D;None,      #要填充的轴，默认为-1，即一个新的最内层轴</span><br><span class="line">    dtype&#x3D;None,     </span><br><span class="line">    name&#x3D;None</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<h2 id="tf训练结构"><a href="#tf训练结构" class="headerlink" title="tf训练结构"></a>tf训练结构</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"># &quot;&quot;&quot;&#39;</span><br><span class="line"># &quot;&quot;&quot;</span><br><span class="line"># import tensorflow as tf</span><br><span class="line"># def model():</span><br><span class="line">#     #参数</span><br><span class="line"># </span><br><span class="line"># def main():</span><br><span class="line">#     @tf.function</span><br><span class="line">#     def trian_step():</span><br><span class="line">#         with tf.GradientTape(persistent&#x3D;True) as gen_tape, tf.GradientTape(</span><br><span class="line">#                 persistent&#x3D;True) as disc_tape:</span><br><span class="line">#             #将损失函数loss用带训练的model表示</span><br><span class="line">#         grad &#x3D; gen_tape.gradient(loss,model.trainable_variables)#前者为损失函数，后者为待优化参数</span><br><span class="line">#         optimizer.apply_gradients(zip(grad,model.trainable_variables))</span><br><span class="line">#     optimizer &#x3D; tf.keras.optimizers.Adam(2e-4, beta_1&#x3D;0.5)#定义优化器</span><br><span class="line">#     </span><br><span class="line">#     ckpt &#x3D; tf.train.Checkpoint(model&#x3D;model,)</span><br><span class="line">#     ckpt_manager &#x3D; tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep&#x3D;5)</span><br><span class="line"># </span><br><span class="line">#     # if a checkpoint exists, restore the latest checkpoint.</span><br><span class="line">#     if ckpt_manager.latest_checkpoint:</span><br><span class="line">#         ckpt.restore(ckpt_manager.latest_checkpoint)</span><br><span class="line">#         print(&#39;Latest checkpoint restored!!&#39;)</span><br><span class="line"># </span><br><span class="line">#     for epoch in range(epochs):</span><br><span class="line">#         trian_step()</span><br><span class="line">#         if (epoch + 1) % 10 &#x3D;&#x3D; 0:</span><br><span class="line">#             ckpt_save_path &#x3D; ckpt_manager.save()</span><br><span class="line">#             print(&#39;Saving checkpoint for epoch &#123;&#125; at &#123;&#125;&#39;.format(epoch + 1, ckpt_save_path))</span><br></pre></td></tr></table></figure>
+<h3 id="tf-one-hot-独热编码"><a href="#tf-one-hot-独热编码" class="headerlink" title="tf.one_hot()独热编码"></a>tf.one_hot()独热编码</h3><pre class="line-numbers language-none"><code class="language-none">one_hot(
+    indices,        #输入的tensor，在深度学习中一般是给定的labels，通常是数字列表，属于一维输入，也可以是多维。
+    depth,          #一个标量，用于定义一个 one hot 维度的深度
+    on_value=None,  #定义在 indices[j] = i 时填充输出的值的标量，默认为1
+    off_value=None, #定义在 indices[j] != i 时填充输出的值的标量，默认为0
+    axis=None,      #要填充的轴，默认为-1，即一个新的最内层轴
+    dtype=None,     
+    name=None
+)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="tf训练结构"><a href="#tf训练结构" class="headerlink" title="tf训练结构"></a>tf训练结构</h2><pre class="line-numbers language-none"><code class="language-none"># """'
+# """
+# import tensorflow as tf
+# def model():
+#     #参数
+# 
+# def main():
+#     @tf.function
+#     def trian_step():
+#         with tf.GradientTape(persistent=True) as gen_tape, tf.GradientTape(
+#                 persistent=True) as disc_tape:
+#             #将损失函数loss用带训练的model表示
+#         grad = gen_tape.gradient(loss,model.trainable_variables)#前者为损失函数，后者为待优化参数
+#         optimizer.apply_gradients(zip(grad,model.trainable_variables))
+#     optimizer = tf.keras.optimizers.Adam(2e-4, beta_1=0.5)#定义优化器
+#     
+#     ckpt = tf.train.Checkpoint(model=model,)
+#     ckpt_manager = tf.train.CheckpointManager(ckpt, checkpoint_path, max_to_keep=5)
+# 
+#     # if a checkpoint exists, restore the latest checkpoint.
+#     if ckpt_manager.latest_checkpoint:
+#         ckpt.restore(ckpt_manager.latest_checkpoint)
+#         print('Latest checkpoint restored!!')
+# 
+#     for epoch in range(epochs):
+#         trian_step()
+#         if (epoch + 1) % 10 == 0:
+#             ckpt_save_path = ckpt_manager.save()
+#             print('Saving checkpoint for epoch {} at {}'.format(epoch + 1, ckpt_save_path))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="TF2上使用TF1代码"><a href="#TF2上使用TF1代码" class="headerlink" title="TF2上使用TF1代码"></a>TF2上使用TF1代码</h3><pre class="line-numbers language-none"><code class="language-none">import tensorflow.compat.v1 as tf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="使用绘图绘制模型结构"><a href="#使用绘图绘制模型结构" class="headerlink" title="使用绘图绘制模型结构"></a>使用绘图绘制模型结构</h3><pre class="line-numbers language-none"><code class="language-none">gen = unet_generator(output_channels=3,)
+tf.keras.utils.plot_model(
+    gen, to_file='gen_adain.png', show_shapes=True)
+
+# os.environ["PATH"] += os.pathsep + 'C:/Program Files/Graphviz/bin/'  #注意修改你的路径
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="BN标准化"><a href="#BN标准化" class="headerlink" title="BN标准化"></a>BN标准化</h3><pre class="line-numbers language-none"><code class="language-none">tf.nn.batch_normalization(x, mean, variances, offset, scale, variance_epsilon, name=None）<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>参数：</p>
+<ul>
+<li>x： 输入的tensor对象，格式一般为[batch, hight, width, channel]</li>
+<li>mean： 均值</li>
+<li>variances： 方差</li>
+<li>offset： 偏移量参数</li>
+<li>scale： 缩放参数</li>
+<li>variance_epsilon： 为避免分母(σ \sigmaσ)为0, 需要对分母加一个很小的数，默认为0.001</li>
+<li>name=None： 当前operation对象的名称</li>
+</ul>
 
                 
             </div>
@@ -756,18 +842,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Elbenhorn.github.io/2021/05/13/%E9%9A%8F%E7%AC%94%E5%91%BD%E4%BB%A4/">
+                <a href="/Elbenhorn.github.io/2021/06/06/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%A7%E4%BD%9C%E4%B8%9A-%E8%BD%A6%E7%89%8C%E8%AF%86%E5%88%AB/">
                     <div class="card-image">
                         
                         
-                        <img src="/Elbenhorn.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/Elbenhorn.github.io/medias/featureimages/22.jpg" class="responsive-img" alt="模式识别大作业-车牌识别">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">模式识别大作业-车牌识别</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -777,9 +862,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-13
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-06-06
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -788,7 +873,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1024,6 +1108,9 @@
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">13k</span>&nbsp;字
+            
             
             
             
@@ -1229,6 +1316,25 @@ $(function () {
 
     
 
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "57f15609"
+        });
+        daovoice('update');
+    </script>
     
 
 	

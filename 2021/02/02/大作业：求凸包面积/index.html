@@ -30,6 +30,8 @@
     <script src="/Elbenhorn.github.io/libs/jquery/jquery.min.js"></script>
 
 <meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/Elbenhorn.github.io/atom.xml" title="Horn'Page" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
 </head>
 
 
@@ -477,14 +479,32 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.6k
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
 
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/Elbenhorn.github.io/libs/prism/prism.css">
         
 
         
@@ -511,7 +531,149 @@
 </ol>
 </li>
 </ol>
-<h2 id="程序代码"><a href="#程序代码" class="headerlink" title="程序代码"></a>程序代码</h2><figure class="highlight plain"><figcaption><span>math</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line">import math</span><br><span class="line">import time</span><br><span class="line">import random</span><br><span class="line">import matplotlib.pyplot as plt</span><br><span class="line"> </span><br><span class="line">#随机生成数组的函数</span><br><span class="line">import random</span><br><span class="line">def random_int_list(start, stop, length):</span><br><span class="line">    start, stop &#x3D; (int(start), int(stop)) if start &lt;&#x3D; stop else (int(stop), int(start))</span><br><span class="line">    length &#x3D; int(abs(length)) if length else 0</span><br><span class="line">    random_list &#x3D; []</span><br><span class="line">    for i in range(length):</span><br><span class="line">        random_list.append(random.randint(start, stop))</span><br><span class="line">    return random_list</span><br><span class="line"> </span><br><span class="line">#获取基准点的下标,基准点是p[k]</span><br><span class="line">def get_leftbottompoint(p):</span><br><span class="line">    k &#x3D; 0</span><br><span class="line">    for i in range(1, len(p)):</span><br><span class="line">        if p[i][1] &lt; p[k][1] or (p[i][1] &#x3D;&#x3D; p[k][1] and p[i][0] &lt; p[k][0]):</span><br><span class="line">            k &#x3D; i</span><br><span class="line">    return k</span><br><span class="line"> </span><br><span class="line">#叉乘计算方法</span><br><span class="line">def multiply(p1, p2, p0):</span><br><span class="line">    return (p1[0] - p0[0]) * (p2[1] - p0[1]) - (p2[0] - p0[0]) * (p1[1] - p0[1])</span><br><span class="line"> </span><br><span class="line">#获取极角，通过求反正切得出，考虑pi&#x2F;2的情况</span><br><span class="line">def get_arc(p1, p0):</span><br><span class="line">    # 兼容sort_points_tan的考虑</span><br><span class="line">    if (p1[0] - p0[0]) &#x3D;&#x3D; 0:</span><br><span class="line">        if ((p1[1] - p0[1])) &#x3D;&#x3D; 0:</span><br><span class="line">            return -1;</span><br><span class="line">        else:</span><br><span class="line">            return math.pi &#x2F; 2</span><br><span class="line">    tan &#x3D; float((p1[1] - p0[1])) &#x2F; float((p1[0] - p0[0]))</span><br><span class="line">    arc &#x3D; math.atan(tan)</span><br><span class="line">    if arc &gt;&#x3D; 0:</span><br><span class="line">        return arc</span><br><span class="line">    else:</span><br><span class="line">        return math.pi + arc</span><br><span class="line">    </span><br><span class="line">#对极角进行排序,排序结果list不包含基准点</span><br><span class="line">def sort_points_tan(p, pk):</span><br><span class="line">    p2 &#x3D; []</span><br><span class="line">    for i in range(0, len(p)):</span><br><span class="line">        p2.append(&#123;&quot;index&quot;: i, &quot;arc&quot;: get_arc(p[i], pk)&#125;)</span><br><span class="line">    #print(&#39;排序前:&#39;,p2)</span><br><span class="line">    p2.sort(key&#x3D;lambda k: (k.get(&#39;arc&#39;)))</span><br><span class="line">    #print(&#39;排序后:&#39;,p2)</span><br><span class="line">    p_out &#x3D; []</span><br><span class="line">    for i in range(0, len(p2)):</span><br><span class="line">        p_out.append(p[p2[i][&quot;index&quot;]])</span><br><span class="line">    return p_out</span><br><span class="line">#求凸多边形顶点</span><br><span class="line">def convex_hull(p):</span><br><span class="line">    p&#x3D;list(set(p))#去重</span><br><span class="line">    k &#x3D; get_leftbottompoint(p)#获取基准点下标</span><br><span class="line">    pk &#x3D; p[k]</span><br><span class="line">    p.remove(p[k])</span><br><span class="line">    #print(&#39;排序前去除基准点的所有点:&#39;,p,&#39;基准点:&#39;,pk)</span><br><span class="line"> </span><br><span class="line">    p_sort &#x3D; sort_points_tan(p, pk)   #按与基准点连线和x轴正向的夹角排序后的点坐标</span><br><span class="line">    p_result &#x3D; [pk,p_sort[0]]</span><br><span class="line"> </span><br><span class="line">    top &#x3D; 2</span><br><span class="line">    for i in range(1, len(p_sort)):</span><br><span class="line">        #叉乘为正,向前递归删点;叉乘为负,序列追加新点</span><br><span class="line">        while(multiply(p_result[-2], p_sort[i],p_result[-1]) &gt; 0):</span><br><span class="line">            p_result.pop()</span><br><span class="line">        #叉乘为负,序列追加新点</span><br><span class="line">        p_result.append(p_sort[i])    </span><br><span class="line">    return p_result</span><br><span class="line"> </span><br><span class="line">#判断点是否在凸多边形内</span><br><span class="line">def is_in_poly(p, poly):</span><br><span class="line">    px, py &#x3D; p</span><br><span class="line">    is_in &#x3D; False</span><br><span class="line">    for i, corner in enumerate(poly):</span><br><span class="line">        next_i &#x3D; i + 1 if i + 1 &lt; len(poly) else 0</span><br><span class="line">        x1, y1 &#x3D; corner</span><br><span class="line">        x2, y2 &#x3D; poly[next_i]</span><br><span class="line">        if (x1 &#x3D;&#x3D; px and y1 &#x3D;&#x3D; py) or (x2 &#x3D;&#x3D; px and y2 &#x3D;&#x3D; py):  # if point is on vertex</span><br><span class="line">            is_in &#x3D; True</span><br><span class="line">            break</span><br><span class="line">        if min(y1, y2) &lt; py &lt;&#x3D; max(y1, y2):  # find horizontal edges of polygon</span><br><span class="line">            x &#x3D; x1 + (py - y1) * (x2 - x1) &#x2F; (y2 - y1)</span><br><span class="line">            if x &#x3D;&#x3D; px:  # if point is on edge</span><br><span class="line">                is_in &#x3D; True</span><br><span class="line">                break</span><br><span class="line">            elif x &gt; px:  # if point is on left-side of line</span><br><span class="line">                is_in &#x3D; not is_in</span><br><span class="line">    return is_in</span><br><span class="line">#蒙特卡洛算法</span><br><span class="line">def mengtekaluo(points,precision):</span><br><span class="line">    pointss&#x3D;[]</span><br><span class="line">    x &#x3D; random_int_list(0, 1000,precision )</span><br><span class="line"> </span><br><span class="line">    y &#x3D; random_int_list(0, 1000, precision)</span><br><span class="line">    for index in range(len(x)):</span><br><span class="line">        pointss.append((x[index], y[index]))</span><br><span class="line">    number&#x3D;0</span><br><span class="line">    for i in range(0,len(pointss)):</span><br><span class="line">        if is_in_poly(pointss[i], result):</span><br><span class="line">            number+&#x3D;1</span><br><span class="line">    area&#x3D;1000000*number&#x2F;int(precision)</span><br><span class="line">return area</span><br><span class="line"></span><br><span class="line">points&#x3D;[]</span><br><span class="line">x &#x3D; random_int_list(1, 1000, 100) </span><br><span class="line">y &#x3D; random_int_list(1, 1000, 100)</span><br><span class="line">for index in range(len(x)):</span><br><span class="line">    points.append((x[index], y[index]))</span><br><span class="line">test_data &#x3D; points</span><br><span class="line">result &#x3D;convex_hull(test_data)</span><br><span class="line">area &#x3D; GetAreaOfPolyGonbyVector(result)</span><br><span class="line">print(area)</span><br><span class="line"></span><br><span class="line">xx&#x3D;[]</span><br><span class="line">yy&#x3D;[]</span><br><span class="line">for i in range(len(result)):</span><br><span class="line">    xx.append(result[i][0])</span><br><span class="line">    yy.append(result[i][1])</span><br><span class="line">xx.append(result[0][0])</span><br><span class="line">yy.append(result[0][1])</span><br><span class="line">plt.rcParams[&#39;font.sans-serif&#39;] &#x3D; [&#39;SimHei&#39;]</span><br><span class="line">plt.plot(xx,yy,color&#x3D;&#39;r&#39;)</span><br><span class="line">plt.title(&quot;最大凸多边形&quot;)</span><br><span class="line">plt.savefig(&#39;C:\\Users\\Elben\\Desktop\\最大凸多边形.png&#39;)</span><br><span class="line">xx1&#x3D;[]</span><br><span class="line">yy1&#x3D;[]</span><br><span class="line">for i in range(len(points)):</span><br><span class="line">    xx1.append(points[i][0])</span><br><span class="line">    yy1.append(points[i][1])</span><br><span class="line">plt.rcParams[&#39;font.sans-serif&#39;] &#x3D; [&#39;SimHei&#39;]</span><br><span class="line">plt.scatter(xx1,yy1,color&#x3D;&#39;r&#39;)</span><br><span class="line">plt.title(&quot;散点图&quot;)</span><br><span class="line">plt.savefig(&#39;C:\\Users\\Elben\\Desktop\\散点图.png&#39;)</span><br><span class="line"></span><br><span class="line">area1&#x3D;mengtekaluo(points,100000)</span><br><span class="line">area2&#x3D;mengtekaluo(points,1000000)</span><br><span class="line">print(&#39;输入10000得到的面积&#x3D;&#39;+str(area1))</span><br><span class="line">print(&#39;输入100000得到的面积&#x3D;&#39;+str(area2))</span><br></pre></td></tr></table></figure>
+<h2 id="程序代码"><a href="#程序代码" class="headerlink" title="程序代码"></a>程序代码</h2><pre class="line-numbers language-import" data-language="import"><div class="caption"><span>math</span></div><code class="language-import">import math
+import time
+import random
+import matplotlib.pyplot as plt
+ 
+#随机生成数组的函数
+import random
+def random_int_list(start, stop, length):
+    start, stop = (int(start), int(stop)) if start &lt;= stop else (int(stop), int(start))
+    length = int(abs(length)) if length else 0
+    random_list = []
+    for i in range(length):
+        random_list.append(random.randint(start, stop))
+    return random_list
+ 
+#获取基准点的下标,基准点是p[k]
+def get_leftbottompoint(p):
+    k = 0
+    for i in range(1, len(p)):
+        if p[i][1] &lt; p[k][1] or (p[i][1] == p[k][1] and p[i][0] &lt; p[k][0]):
+            k = i
+    return k
+ 
+#叉乘计算方法
+def multiply(p1, p2, p0):
+    return (p1[0] - p0[0]) * (p2[1] - p0[1]) - (p2[0] - p0[0]) * (p1[1] - p0[1])
+ 
+#获取极角，通过求反正切得出，考虑pi/2的情况
+def get_arc(p1, p0):
+    # 兼容sort_points_tan的考虑
+    if (p1[0] - p0[0]) == 0:
+        if ((p1[1] - p0[1])) == 0:
+            return -1;
+        else:
+            return math.pi / 2
+    tan = float((p1[1] - p0[1])) / float((p1[0] - p0[0]))
+    arc = math.atan(tan)
+    if arc &gt;= 0:
+        return arc
+    else:
+        return math.pi + arc
+    
+#对极角进行排序,排序结果list不包含基准点
+def sort_points_tan(p, pk):
+    p2 = []
+    for i in range(0, len(p)):
+        p2.append({"index": i, "arc": get_arc(p[i], pk)})
+    #print('排序前:',p2)
+    p2.sort(key=lambda k: (k.get('arc')))
+    #print('排序后:',p2)
+    p_out = []
+    for i in range(0, len(p2)):
+        p_out.append(p[p2[i]["index"]])
+    return p_out
+#求凸多边形顶点
+def convex_hull(p):
+    p=list(set(p))#去重
+    k = get_leftbottompoint(p)#获取基准点下标
+    pk = p[k]
+    p.remove(p[k])
+    #print('排序前去除基准点的所有点:',p,'基准点:',pk)
+ 
+    p_sort = sort_points_tan(p, pk)   #按与基准点连线和x轴正向的夹角排序后的点坐标
+    p_result = [pk,p_sort[0]]
+ 
+    top = 2
+    for i in range(1, len(p_sort)):
+        #叉乘为正,向前递归删点;叉乘为负,序列追加新点
+        while(multiply(p_result[-2], p_sort[i],p_result[-1]) &gt; 0):
+            p_result.pop()
+        #叉乘为负,序列追加新点
+        p_result.append(p_sort[i])    
+    return p_result
+ 
+#判断点是否在凸多边形内
+def is_in_poly(p, poly):
+    px, py = p
+    is_in = False
+    for i, corner in enumerate(poly):
+        next_i = i + 1 if i + 1 &lt; len(poly) else 0
+        x1, y1 = corner
+        x2, y2 = poly[next_i]
+        if (x1 == px and y1 == py) or (x2 == px and y2 == py):  # if point is on vertex
+            is_in = True
+            break
+        if min(y1, y2) &lt; py &lt;= max(y1, y2):  # find horizontal edges of polygon
+            x = x1 + (py - y1) * (x2 - x1) / (y2 - y1)
+            if x == px:  # if point is on edge
+                is_in = True
+                break
+            elif x &gt; px:  # if point is on left-side of line
+                is_in = not is_in
+    return is_in
+#蒙特卡洛算法
+def mengtekaluo(points,precision):
+    pointss=[]
+    x = random_int_list(0, 1000,precision )
+ 
+    y = random_int_list(0, 1000, precision)
+    for index in range(len(x)):
+        pointss.append((x[index], y[index]))
+    number=0
+    for i in range(0,len(pointss)):
+        if is_in_poly(pointss[i], result):
+            number+=1
+    area=1000000*number/int(precision)
+return area
+
+points=[]
+x = random_int_list(1, 1000, 100) 
+y = random_int_list(1, 1000, 100)
+for index in range(len(x)):
+    points.append((x[index], y[index]))
+test_data = points
+result =convex_hull(test_data)
+area = GetAreaOfPolyGonbyVector(result)
+print(area)
+
+xx=[]
+yy=[]
+for i in range(len(result)):
+    xx.append(result[i][0])
+    yy.append(result[i][1])
+xx.append(result[0][0])
+yy.append(result[0][1])
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.plot(xx,yy,color='r')
+plt.title("最大凸多边形")
+plt.savefig('C:\\Users\\Elben\\Desktop\\最大凸多边形.png')
+xx1=[]
+yy1=[]
+for i in range(len(points)):
+    xx1.append(points[i][0])
+    yy1.append(points[i][1])
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.scatter(xx1,yy1,color='r')
+plt.title("散点图")
+plt.savefig('C:\\Users\\Elben\\Desktop\\散点图.png')
+
+area1=mengtekaluo(points,100000)
+area2=mengtekaluo(points,1000000)
+print('输入10000得到的面积='+str(area1))
+print('输入100000得到的面积='+str(area2))<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -1021,6 +1183,9 @@
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">13k</span>&nbsp;字
+            
             
             
             
@@ -1226,6 +1391,25 @@ $(function () {
 
     
 
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["DaoVoiceObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            a.charset = "utf-8";
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", ('https:' == document.location.protocol ? 'https:' : 'http:') +
+            "//widget.daovoice.io/widget/6984b559.js", "daovoice")
+        daovoice('init', {
+            app_id: "57f15609"
+        });
+        daovoice('update');
+    </script>
     
 
 	
